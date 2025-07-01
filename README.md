@@ -3,13 +3,13 @@
 
 ## Giới thiệu
 
-- Đây là ứng dụng được sử dụng làm đồ án cuối kỳ cho môn Nhập môn Công nghệ phần mềm.
-- Ứng dụng được xây dựng theo mô hình 3 lớp, sử dụng Entity Framework, thiết kế giao diện bằng C# WinForms.
+- Đây là ứng dụng được sử dụng làm đồ án 1 cho chuyên ngành Công nghệ phần mềm.
+- Ứng dụng được xây dựng theo mô hình 3 lớp, thiết kế giao diện bằng C# WinForms.
 - Thông tin chi tiết về project có thể tìm đọc trong file `Report.docx`.
 
 ## Giảng viên hướng dẫn
 
-- ThS. Đoàn Tuấn Nam – Khoa Công nghệ thông tin, Trường Đại học Kinh tế Kỹ thuật Công nghiệp
+- Đoàn Tuấn Nam – Khoa Công nghệ thông tin, Trường Đại học Kinh tế Kỹ thuật Công nghiệp
 
 ## Sinh viên thực hiện
 
