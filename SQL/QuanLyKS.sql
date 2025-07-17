@@ -1,4 +1,0 @@
-CREATE TABLE QUI_DINH (
-    TenQuiDinh NVARCHAR(50),
-    MoTa NVARCHAR(MAX)
-);

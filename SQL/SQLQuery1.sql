@@ -1,5 +1,0 @@
-CREATE DATABASE QLKhachSan;
-GO
-
-USE QLKhachSan;
-GO
