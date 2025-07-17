@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAn1.OrderPhong;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,12 +39,19 @@ namespace DoAn1
 
                 foreach (DataRow row in dt.Rows)
                 {
+                    string ngayNhan = "";
+                    string ngayDuKienTra = "";
+                    if (row["NgayNhan"] != DBNull.Value)
+                        ngayNhan = Convert.ToDateTime(row["NgayNhan"]).ToString("dd/MM/yyyy");
+                    if (row["NgayDuKienTra"] != DBNull.Value)
+                        ngayDuKienTra = Convert.ToDateTime(row["NgayDuKienTra"]).ToString("dd/MM/yyyy");
+
                     BangKhachHang.Rows.Add(
                         row["MaPhong"],
                         row["MaLoaiPhong"],
                         row["MaKhachHang"],
-                        row["NgayNhan"],
-                        row["NgayDuKienTra"],
+                        ngayNhan,
+                        ngayDuKienTra,
                         row["GhiChu"]
                     );
                 }
@@ -66,6 +74,15 @@ namespace DoAn1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void DatPhongMoi_Click(object sender, EventArgs e)
+        {
+            var themPhongForm = new formThemThongTinDatPhong();
+            if (themPhongForm.ShowDialog() == DialogResult.OK)
+            {
+                ExportDataToGrid();
+            }
         }
     }
 }

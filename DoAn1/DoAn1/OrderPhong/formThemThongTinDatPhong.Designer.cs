@@ -28,18 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            MaPhong = new TextBox();
+            MaLoaiPhong = new ComboBox();
+            label2 = new Label();
+            NgayNhan = new DateTimePicker();
+            NgayDuKienTra = new DateTimePicker();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            GhiChu = new TextBox();
+            label6 = new Label();
+            Check = new Button();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(38, 110);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(71, 17);
+            label1.TabIndex = 0;
+            label1.Text = "Mã Phòng";
+            // 
+            // MaPhong
+            // 
+            MaPhong.Location = new Point(180, 106);
+            MaPhong.Margin = new Padding(4, 3, 4, 3);
+            MaPhong.Name = "MaPhong";
+            MaPhong.Size = new Size(247, 21);
+            MaPhong.TabIndex = 1;
+            // 
+            // MaLoaiPhong
+            // 
+            MaLoaiPhong.FormattingEnabled = true;
+            MaLoaiPhong.Location = new Point(180, 63);
+            MaLoaiPhong.Margin = new Padding(4, 3, 4, 3);
+            MaLoaiPhong.Name = "MaLoaiPhong";
+            MaLoaiPhong.Size = new Size(247, 23);
+            MaLoaiPhong.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(38, 68);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 17);
+            label2.TabIndex = 3;
+            label2.Text = "Mã Loại Phòng";
+            // 
+            // NgayNhan
+            // 
+            NgayNhan.Location = new Point(180, 156);
+            NgayNhan.Margin = new Padding(4, 3, 4, 3);
+            NgayNhan.Name = "NgayNhan";
+            NgayNhan.Size = new Size(247, 21);
+            NgayNhan.TabIndex = 4;
+            // 
+            // NgayDuKienTra
+            // 
+            NgayDuKienTra.Location = new Point(180, 204);
+            NgayDuKienTra.Margin = new Padding(4, 3, 4, 3);
+            NgayDuKienTra.Name = "NgayDuKienTra";
+            NgayDuKienTra.Size = new Size(247, 21);
+            NgayDuKienTra.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(38, 159);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 17);
+            label3.TabIndex = 6;
+            label3.Text = "Ngày Nhận";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(38, 204);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(117, 17);
+            label4.TabIndex = 7;
+            label4.Text = "Ngày Dự Kiến Trả";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(38, 257);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(55, 17);
+            label5.TabIndex = 8;
+            label5.Text = "Ghi chú";
+            // 
+            // GhiChu
+            // 
+            GhiChu.Location = new Point(180, 245);
+            GhiChu.Margin = new Padding(4, 3, 4, 3);
+            GhiChu.Multiline = true;
+            GhiChu.Name = "GhiChu";
+            GhiChu.Size = new Size(247, 50);
+            GhiChu.TabIndex = 9;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(196, 9);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(138, 30);
+            label6.TabIndex = 10;
+            label6.Text = "ĐẶT PHÒNG";
+            // 
+            // Check
+            // 
+            Check.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Check.Location = new Point(219, 334);
+            Check.Name = "Check";
+            Check.Size = new Size(105, 37);
+            Check.TabIndex = 11;
+            Check.Text = "Xác nhận";
+            Check.UseVisualStyleBackColor = true;
+            Check.Click += Check_Click;
             // 
             // formThemThongTinDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(417, 393);
+            ClientSize = new Size(506, 393);
+            Controls.Add(Check);
+            Controls.Add(label6);
+            Controls.Add(GhiChu);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(NgayDuKienTra);
+            Controls.Add(NgayNhan);
+            Controls.Add(label2);
+            Controls.Add(MaLoaiPhong);
+            Controls.Add(MaPhong);
+            Controls.Add(label1);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "formThemThongTinDatPhong";
-            Text = "formThemThongTinDatPhong";
+            Text = "Đặt phòng";
+            Load += formThemThongTinDatPhong_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox MaPhong;
+        private ComboBox MaLoaiPhong;
+        private Label label2;
+        private DateTimePicker NgayNhan;
+        private DateTimePicker NgayDuKienTra;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private TextBox GhiChu;
+        private Label label6;
+        private Button Check;
     }
 }

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "formThemThongTinDatPhong.cs",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "RelativeToolTip": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T04:30:23.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "formThemThongTinDatPhong.cs [Design]",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
@@ -48,7 +65,7 @@
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formDatPhong.cs",
               "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs",
               "RelativeToolTip": "DoAn1\\OrderPhong\\formDatPhong.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T02:20:10.501Z",
               "EditorCaption": ""
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\Program.cs",
               "RelativeDocumentMoniker": "DoAn1\\Program.cs",
