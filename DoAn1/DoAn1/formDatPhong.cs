@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,55 @@ namespace DoAn1
 {
     public partial class formDatPhong : Form
     {
+        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLKhachSan;Integrated Security=True";
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataAdapter adt;
+        DataTable dt;
         public formDatPhong()
         {
             InitializeComponent();
         }
 
+        private void ExportDataToGrid()
+        {
+            BangKhachHang.Rows.Clear();
+
+            con = new SqlConnection(connectionString);
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand("SELECT * FROM KHACH_HANG", con);
+                adt = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                adt.Fill(dt);
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    BangKhachHang.Rows.Add(
+                        row["MaKhachHang"],
+                        row["TenKhachHang"],
+                        row["CMND"],
+                        row["GioiTinh"],
+                        row["DiaChi"],
+                        row["DienThoai"],
+                        row["QuocTich"]
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message);
+            }
+        }
         private void formDatPhong_Load(object sender, EventArgs e)
         {
-            this.ControlBox = false;
+            ExportDataToGrid();
+        }
+
+        private void BangKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

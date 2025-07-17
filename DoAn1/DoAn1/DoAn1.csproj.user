@@ -7,6 +7,9 @@
     <Compile Update="formCapNhatThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formDanhSachPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -16,10 +19,22 @@
     <Compile Update="formDichVuThem.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formNhapThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formSuaThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="formThongTinCanSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formXoaThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

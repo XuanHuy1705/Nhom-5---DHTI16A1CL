@@ -1,4 +1,4 @@
-namespace DoAn1
+﻿namespace DoAn1
 {
     public partial class Form1 : Form
     {
@@ -8,6 +8,7 @@ namespace DoAn1
         formDichVuThem DichVuThem;
         formThanhToan ThanhToan;
         formCapNhatThongTin CapNhatThongTin;
+        Form1 form;
 
         public Form1()
         {
@@ -217,7 +218,7 @@ namespace DoAn1
 
         private void DichVuThem_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            
+
             DichVuThem = null;
         }
 
@@ -240,6 +241,10 @@ namespace DoAn1
         private void DanhSachPhong_FormClosed(object? sender, FormClosedEventArgs e)
         {
             DanhSachPhong = null;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
