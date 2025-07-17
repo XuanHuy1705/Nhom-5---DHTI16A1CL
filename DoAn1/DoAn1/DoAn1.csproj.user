@@ -1,40 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Form1.cs">
+    <Compile Update="DichVuThem\ThongTinDichVuDaDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formCapNhatThongTin.cs">
+    <Compile Update="GiaoDienChinh\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formDangNhap.cs">
+    <Compile Update="CapNhatThongTin\formCapNhatThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GiaoDienChinh\formDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formDanhSachPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formDatPhong.cs">
+    <Compile Update="OrderPhong\formDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formDichVuThem.cs">
+    <Compile Update="DichVuThem\formDichVuThem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formNhapThongTin.cs">
+    <Compile Update="CapNhatThongTin\formNhapThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formSuaThongTin.cs">
+    <Compile Update="CapNhatThongTin\formSuaThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formThongTinCanSua.cs">
+    <Compile Update="CapNhatThongTin\formThongTinCanSua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formTraPhong.cs">
+    <Compile Update="OrderPhong\formThemThongTinDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formXoaThongTin.cs">
+    <Compile Update="OrderPhong\formTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CapNhatThongTin\formXoaThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

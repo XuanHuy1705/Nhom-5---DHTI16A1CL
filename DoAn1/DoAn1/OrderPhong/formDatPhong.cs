@@ -31,7 +31,7 @@ namespace DoAn1
             try
             {
                 con.Open();
-                cmd = new SqlCommand("SELECT * FROM KHACH_HANG", con);
+                cmd = new SqlCommand("SELECT * FROM DANH_SACH_PHONG_CHO_THUE", con);
                 adt = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 adt.Fill(dt);
@@ -39,13 +39,12 @@ namespace DoAn1
                 foreach (DataRow row in dt.Rows)
                 {
                     BangKhachHang.Rows.Add(
+                        row["MaPhong"],
+                        row["MaLoaiPhong"],
                         row["MaKhachHang"],
-                        row["TenKhachHang"],
-                        row["CMND"],
-                        row["GioiTinh"],
-                        row["DiaChi"],
-                        row["DienThoai"],
-                        row["QuocTich"]
+                        row["NgayNhan"],
+                        row["NgayDuKienTra"],
+                        row["GhiChu"]
                     );
                 }
             }
@@ -60,6 +59,11 @@ namespace DoAn1
         }
 
         private void BangKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

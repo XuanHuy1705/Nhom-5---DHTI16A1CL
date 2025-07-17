@@ -1,6 +1,6 @@
-﻿namespace DoAn1
+﻿namespace DoAn1.OrderPhong
 {
-    partial class formDichVuThem
+    partial class formThemThongTinDatPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(291, 118);
-            label1.Name = "label1";
-            label1.Size = new Size(88, 15);
-            label1.TabIndex = 0;
-            label1.Text = "DICH VU THEM";
-            label1.Click += label1_Click;
-            // 
-            // formDichVuThem
+            // formThemThongTinDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "formDichVuThem";
-            Text = "formDichVuThem";
+            ClientSize = new Size(417, 393);
+            Name = "formThemThongTinDatPhong";
+            Text = "formThemThongTinDatPhong";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
     }
 }

@@ -30,6 +30,7 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            label1 = new Label();
             BangDanhSachPhong = new DataGridView();
             Ma_loai_phong = new DataGridViewTextBoxColumn();
             Ten_loai_phong = new DataGridViewTextBoxColumn();
@@ -37,7 +38,6 @@
             So_nguoi_chuan = new DataGridViewTextBoxColumn();
             So_nguoi_toi_da = new DataGridViewTextBoxColumn();
             Tinh_trang_phong = new DataGridViewTextBoxColumn();
-            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BangDanhSachPhong).BeginInit();
             SuspendLayout();
@@ -52,6 +52,16 @@
             panel1.Size = new Size(799, 439);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(253, 58);
+            label1.Name = "label1";
+            label1.Size = new Size(316, 25);
+            label1.TabIndex = 1;
+            label1.Text = "DANH SÁCH PHÒNG KHÁCH SẠN";
             // 
             // BangDanhSachPhong
             // 
@@ -71,10 +81,10 @@
             BangDanhSachPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BangDanhSachPhong.Columns.AddRange(new DataGridViewColumn[] { Ma_loai_phong, Ten_loai_phong, Don_gia, So_nguoi_chuan, So_nguoi_toi_da, Tinh_trang_phong });
             BangDanhSachPhong.EnableHeadersVisualStyles = false;
-            BangDanhSachPhong.Location = new Point(0, 152);
+            BangDanhSachPhong.Location = new Point(0, 198);
             BangDanhSachPhong.Name = "BangDanhSachPhong";
             BangDanhSachPhong.RowHeadersVisible = false;
-            BangDanhSachPhong.Size = new Size(799, 284);
+            BangDanhSachPhong.Size = new Size(799, 238);
             BangDanhSachPhong.TabIndex = 0;
             BangDanhSachPhong.CellContentClick += BangDanhSachPhong_CellContentClick;
             // 
@@ -113,16 +123,6 @@
             Tinh_trang_phong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             Tinh_trang_phong.HeaderText = "Tình trạng phòng";
             Tinh_trang_phong.Name = "Tinh_trang_phong";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(253, 58);
-            label1.Name = "label1";
-            label1.Size = new Size(316, 25);
-            label1.TabIndex = 1;
-            label1.Text = "DANH SÁCH PHÒNG KHÁCH SẠN";
             // 
             // formDanhSachPhong
             // 

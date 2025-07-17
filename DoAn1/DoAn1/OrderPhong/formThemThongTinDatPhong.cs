@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoAn1
+namespace DoAn1.OrderPhong
 {
-    public partial class formDichVuThem : Form
+    public partial class formThemThongTinDatPhong : Form
     {
-        public formDichVuThem()
+        public formThemThongTinDatPhong()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

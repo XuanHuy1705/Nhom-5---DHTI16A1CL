@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             BangKhachHang = new DataGridView();
             MaPhong = new DataGridViewTextBoxColumn();
             MaLoaiPhong = new DataGridViewTextBoxColumn();
@@ -36,6 +36,9 @@
             NgayNhan = new DataGridViewTextBoxColumn();
             NgayDuKienTra = new DataGridViewTextBoxColumn();
             GhiChu = new DataGridViewTextBoxColumn();
+            DatPhongMoi = new Button();
+            label1 = new Label();
+            SuaThongTinDatPhong = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -47,60 +50,100 @@
             BangKhachHang.AllowUserToResizeRows = false;
             BangKhachHang.BackgroundColor = SystemColors.ButtonHighlight;
             BangKhachHang.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            BangKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            BangKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             BangKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaPhong, MaLoaiPhong, MaKhachHang, NgayNhan, NgayDuKienTra, GhiChu });
             BangKhachHang.Dock = DockStyle.Bottom;
             BangKhachHang.EnableHeadersVisualStyles = false;
-            BangKhachHang.Location = new Point(0, 177);
+            BangKhachHang.Location = new Point(0, 196);
             BangKhachHang.Name = "BangKhachHang";
             BangKhachHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            BangKhachHang.Size = new Size(800, 273);
+            BangKhachHang.Size = new Size(800, 254);
             BangKhachHang.TabIndex = 0;
             BangKhachHang.CellContentClick += BangKhachHang_CellContentClick;
             // 
             // MaPhong
             // 
+            MaPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             MaPhong.HeaderText = "Mã Phòng";
             MaPhong.Name = "MaPhong";
             // 
             // MaLoaiPhong
             // 
+            MaLoaiPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             MaLoaiPhong.HeaderText = "Mã Loại Phòng";
             MaLoaiPhong.Name = "MaLoaiPhong";
             // 
             // MaKhachHang
             // 
+            MaKhachHang.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             MaKhachHang.HeaderText = "Mã Khách Hàng";
             MaKhachHang.Name = "MaKhachHang";
             // 
             // NgayNhan
             // 
+            NgayNhan.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             NgayNhan.HeaderText = "Ngày Nhận";
             NgayNhan.Name = "NgayNhan";
             // 
             // NgayDuKienTra
             // 
+            NgayDuKienTra.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             NgayDuKienTra.HeaderText = "Ngày Dự Kiến Trả";
             NgayDuKienTra.Name = "NgayDuKienTra";
             // 
             // GhiChu
             // 
+            GhiChu.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             GhiChu.HeaderText = "Ghi Chú";
             GhiChu.Name = "GhiChu";
+            // 
+            // DatPhongMoi
+            // 
+            DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DatPhongMoi.Location = new Point(166, 45);
+            DatPhongMoi.Name = "DatPhongMoi";
+            DatPhongMoi.Size = new Size(176, 57);
+            DatPhongMoi.TabIndex = 1;
+            DatPhongMoi.Text = "Đặt phòng mới";
+            DatPhongMoi.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(244, 145);
+            label1.Name = "label1";
+            label1.Size = new Size(336, 25);
+            label1.TabIndex = 2;
+            label1.Text = "DANH SÁCH PHÒNG ĐÃ ĐƯỢC ĐẶT";
+            label1.Click += label1_Click;
+            // 
+            // SuaThongTinDatPhong
+            // 
+            SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SuaThongTinDatPhong.Location = new Point(480, 45);
+            SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
+            SuaThongTinDatPhong.Size = new Size(178, 57);
+            SuaThongTinDatPhong.TabIndex = 3;
+            SuaThongTinDatPhong.Text = "Sửa thông tin phòng";
+            SuaThongTinDatPhong.UseVisualStyleBackColor = true;
             // 
             // formDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(SuaThongTinDatPhong);
+            Controls.Add(label1);
+            Controls.Add(DatPhongMoi);
             Controls.Add(BangKhachHang);
             FormBorderStyle = FormBorderStyle.None;
             Name = "formDatPhong";
@@ -108,6 +151,7 @@
             Load += formDatPhong_Load;
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -119,5 +163,8 @@
         private DataGridViewTextBoxColumn NgayNhan;
         private DataGridViewTextBoxColumn NgayDuKienTra;
         private DataGridViewTextBoxColumn GhiChu;
+        private Button DatPhongMoi;
+        private Label label1;
+        private Button SuaThongTinDatPhong;
     }
 }
