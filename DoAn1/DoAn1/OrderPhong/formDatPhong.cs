@@ -84,5 +84,16 @@ namespace DoAn1
                 ExportDataToGrid();
             }
         }
+
+        private void SuaThongTinDatPhong_Click(object sender, EventArgs e)
+        {
+            var chonPhongForm = new formChonPhongSuaThongTin();
+            chonPhongForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExportDataToGrid();
+        }
     }
 }

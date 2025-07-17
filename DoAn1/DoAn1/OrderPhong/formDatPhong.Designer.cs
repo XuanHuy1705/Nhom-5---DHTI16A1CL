@@ -30,15 +30,16 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             BangKhachHang = new DataGridView();
+            DatPhongMoi = new Button();
+            label1 = new Label();
+            SuaThongTinDatPhong = new Button();
+            button1 = new Button();
             MaPhong = new DataGridViewTextBoxColumn();
             MaLoaiPhong = new DataGridViewTextBoxColumn();
             MaKhachHang = new DataGridViewTextBoxColumn();
             NgayNhan = new DataGridViewTextBoxColumn();
             NgayDuKienTra = new DataGridViewTextBoxColumn();
             GhiChu = new DataGridViewTextBoxColumn();
-            DatPhongMoi = new Button();
-            label1 = new Label();
-            SuaThongTinDatPhong = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -68,6 +69,50 @@
             BangKhachHang.Size = new Size(800, 254);
             BangKhachHang.TabIndex = 0;
             BangKhachHang.CellContentClick += BangKhachHang_CellContentClick;
+            // 
+            // DatPhongMoi
+            // 
+            DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DatPhongMoi.Location = new Point(166, 45);
+            DatPhongMoi.Name = "DatPhongMoi";
+            DatPhongMoi.Size = new Size(176, 57);
+            DatPhongMoi.TabIndex = 1;
+            DatPhongMoi.Text = "Đặt phòng mới";
+            DatPhongMoi.UseVisualStyleBackColor = true;
+            DatPhongMoi.Click += DatPhongMoi_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(229, 131);
+            label1.Name = "label1";
+            label1.Size = new Size(336, 25);
+            label1.TabIndex = 2;
+            label1.Text = "DANH SÁCH PHÒNG ĐÃ ĐƯỢC ĐẶT";
+            label1.Click += label1_Click;
+            // 
+            // SuaThongTinDatPhong
+            // 
+            SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SuaThongTinDatPhong.Location = new Point(480, 45);
+            SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
+            SuaThongTinDatPhong.Size = new Size(178, 57);
+            SuaThongTinDatPhong.TabIndex = 3;
+            SuaThongTinDatPhong.Text = "Sửa thông tin phòng";
+            SuaThongTinDatPhong.UseVisualStyleBackColor = true;
+            SuaThongTinDatPhong.Click += SuaThongTinDatPhong_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(599, 146);
+            button1.Name = "button1";
+            button1.Size = new Size(138, 38);
+            button1.TabIndex = 4;
+            button1.Text = "Làm mới dữ liệu";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // MaPhong
             // 
@@ -105,43 +150,12 @@
             GhiChu.HeaderText = "Ghi Chú";
             GhiChu.Name = "GhiChu";
             // 
-            // DatPhongMoi
-            // 
-            DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DatPhongMoi.Location = new Point(166, 45);
-            DatPhongMoi.Name = "DatPhongMoi";
-            DatPhongMoi.Size = new Size(176, 57);
-            DatPhongMoi.TabIndex = 1;
-            DatPhongMoi.Text = "Đặt phòng mới";
-            DatPhongMoi.UseVisualStyleBackColor = true;
-            DatPhongMoi.Click += DatPhongMoi_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(244, 145);
-            label1.Name = "label1";
-            label1.Size = new Size(336, 25);
-            label1.TabIndex = 2;
-            label1.Text = "DANH SÁCH PHÒNG ĐÃ ĐƯỢC ĐẶT";
-            label1.Click += label1_Click;
-            // 
-            // SuaThongTinDatPhong
-            // 
-            SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaThongTinDatPhong.Location = new Point(480, 45);
-            SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
-            SuaThongTinDatPhong.Size = new Size(178, 57);
-            SuaThongTinDatPhong.TabIndex = 3;
-            SuaThongTinDatPhong.Text = "Sửa thông tin phòng";
-            SuaThongTinDatPhong.UseVisualStyleBackColor = true;
-            // 
             // formDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(SuaThongTinDatPhong);
             Controls.Add(label1);
             Controls.Add(DatPhongMoi);
@@ -158,14 +172,15 @@
         #endregion
 
         private DataGridView BangKhachHang;
+        private Button DatPhongMoi;
+        private Label label1;
+        private Button SuaThongTinDatPhong;
+        private Button button1;
         private DataGridViewTextBoxColumn MaPhong;
         private DataGridViewTextBoxColumn MaLoaiPhong;
         private DataGridViewTextBoxColumn MaKhachHang;
         private DataGridViewTextBoxColumn NgayNhan;
         private DataGridViewTextBoxColumn NgayDuKienTra;
         private DataGridViewTextBoxColumn GhiChu;
-        private Button DatPhongMoi;
-        private Label label1;
-        private Button SuaThongTinDatPhong;
     }
 }

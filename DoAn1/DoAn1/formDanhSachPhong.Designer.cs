@@ -37,7 +37,6 @@
             Don_gia = new DataGridViewTextBoxColumn();
             So_nguoi_chuan = new DataGridViewTextBoxColumn();
             So_nguoi_toi_da = new DataGridViewTextBoxColumn();
-            Tinh_trang_phong = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BangDanhSachPhong).BeginInit();
             SuspendLayout();
@@ -79,7 +78,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             BangDanhSachPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             BangDanhSachPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BangDanhSachPhong.Columns.AddRange(new DataGridViewColumn[] { Ma_loai_phong, Ten_loai_phong, Don_gia, So_nguoi_chuan, So_nguoi_toi_da, Tinh_trang_phong });
+            BangDanhSachPhong.Columns.AddRange(new DataGridViewColumn[] { Ma_loai_phong, Ten_loai_phong, Don_gia, So_nguoi_chuan, So_nguoi_toi_da });
             BangDanhSachPhong.EnableHeadersVisualStyles = false;
             BangDanhSachPhong.Location = new Point(0, 198);
             BangDanhSachPhong.Name = "BangDanhSachPhong";
@@ -118,12 +117,6 @@
             So_nguoi_toi_da.HeaderText = "Số người tối đa";
             So_nguoi_toi_da.Name = "So_nguoi_toi_da";
             // 
-            // Tinh_trang_phong
-            // 
-            Tinh_trang_phong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Tinh_trang_phong.HeaderText = "Tình trạng phòng";
-            Tinh_trang_phong.Name = "Tinh_trang_phong";
-            // 
             // formDanhSachPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -144,12 +137,11 @@
 
         private Panel panel1;
         private DataGridView BangDanhSachPhong;
+        private Label label1;
         private DataGridViewTextBoxColumn Ma_loai_phong;
         private DataGridViewTextBoxColumn Ten_loai_phong;
         private DataGridViewTextBoxColumn Don_gia;
         private DataGridViewTextBoxColumn So_nguoi_chuan;
         private DataGridViewTextBoxColumn So_nguoi_toi_da;
-        private DataGridViewTextBoxColumn Tinh_trang_phong;
-        private Label label1;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            MaPhong = new TextBox();
             MaLoaiPhong = new ComboBox();
             label2 = new Label();
             NgayNhan = new DateTimePicker();
@@ -40,6 +39,9 @@
             GhiChu = new TextBox();
             label6 = new Label();
             Check = new Button();
+            MaPhong = new ComboBox();
+            label7 = new Label();
+            MaKhachHang = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -53,22 +55,15 @@
             label1.TabIndex = 0;
             label1.Text = "Mã Phòng";
             // 
-            // MaPhong
-            // 
-            MaPhong.Location = new Point(180, 106);
-            MaPhong.Margin = new Padding(4, 3, 4, 3);
-            MaPhong.Name = "MaPhong";
-            MaPhong.Size = new Size(247, 21);
-            MaPhong.TabIndex = 1;
-            // 
             // MaLoaiPhong
             // 
             MaLoaiPhong.FormattingEnabled = true;
-            MaLoaiPhong.Location = new Point(180, 63);
+            MaLoaiPhong.Location = new Point(181, 63);
             MaLoaiPhong.Margin = new Padding(4, 3, 4, 3);
             MaLoaiPhong.Name = "MaLoaiPhong";
-            MaLoaiPhong.Size = new Size(247, 23);
+            MaLoaiPhong.Size = new Size(246, 23);
             MaLoaiPhong.TabIndex = 2;
+            MaLoaiPhong.SelectedIndexChanged += MaLoaiPhong_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -83,7 +78,7 @@
             // 
             // NgayNhan
             // 
-            NgayNhan.Location = new Point(180, 156);
+            NgayNhan.Location = new Point(180, 179);
             NgayNhan.Margin = new Padding(4, 3, 4, 3);
             NgayNhan.Name = "NgayNhan";
             NgayNhan.Size = new Size(247, 21);
@@ -91,7 +86,7 @@
             // 
             // NgayDuKienTra
             // 
-            NgayDuKienTra.Location = new Point(180, 204);
+            NgayDuKienTra.Location = new Point(180, 227);
             NgayDuKienTra.Margin = new Padding(4, 3, 4, 3);
             NgayDuKienTra.Name = "NgayDuKienTra";
             NgayDuKienTra.Size = new Size(247, 21);
@@ -101,7 +96,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(38, 159);
+            label3.Location = new Point(38, 182);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(77, 17);
@@ -112,7 +107,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(38, 204);
+            label4.Location = new Point(38, 227);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(117, 17);
@@ -123,7 +118,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(38, 257);
+            label5.Location = new Point(38, 280);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(55, 17);
@@ -132,12 +127,13 @@
             // 
             // GhiChu
             // 
-            GhiChu.Location = new Point(180, 245);
+            GhiChu.Location = new Point(180, 268);
             GhiChu.Margin = new Padding(4, 3, 4, 3);
             GhiChu.Multiline = true;
             GhiChu.Name = "GhiChu";
             GhiChu.Size = new Size(247, 50);
             GhiChu.TabIndex = 9;
+            GhiChu.TextChanged += GhiChu_TextChanged;
             // 
             // label6
             // 
@@ -161,11 +157,41 @@
             Check.UseVisualStyleBackColor = true;
             Check.Click += Check_Click;
             // 
+            // MaPhong
+            // 
+            MaPhong.FormattingEnabled = true;
+            MaPhong.Location = new Point(181, 104);
+            MaPhong.Margin = new Padding(4, 3, 4, 3);
+            MaPhong.Name = "MaPhong";
+            MaPhong.Size = new Size(246, 23);
+            MaPhong.TabIndex = 12;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(38, 146);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(102, 17);
+            label7.TabIndex = 13;
+            label7.Text = "Mã khách hàng";
+            // 
+            // MaKhachHang
+            // 
+            MaKhachHang.Location = new Point(182, 144);
+            MaKhachHang.Name = "MaKhachHang";
+            MaKhachHang.Size = new Size(245, 21);
+            MaKhachHang.TabIndex = 14;
+            // 
             // formThemThongTinDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(506, 393);
+            Controls.Add(MaKhachHang);
+            Controls.Add(label7);
+            Controls.Add(MaPhong);
             Controls.Add(Check);
             Controls.Add(label6);
             Controls.Add(GhiChu);
@@ -176,7 +202,6 @@
             Controls.Add(NgayNhan);
             Controls.Add(label2);
             Controls.Add(MaLoaiPhong);
-            Controls.Add(MaPhong);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
@@ -190,7 +215,6 @@
         #endregion
 
         private Label label1;
-        private TextBox MaPhong;
         private ComboBox MaLoaiPhong;
         private Label label2;
         private DateTimePicker NgayNhan;
@@ -201,5 +225,8 @@
         private TextBox GhiChu;
         private Label label6;
         private Button Check;
+        private ComboBox MaPhong;
+        private Label label7;
+        private TextBox MaKhachHang;
     }
 }

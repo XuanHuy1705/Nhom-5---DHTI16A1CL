@@ -39,8 +39,7 @@ namespace DoAn1
                         row["TenLoaiPhong"],
                         row["DonGia"],
                         row["SoNguoiChuan"],
-                        row["SoNguoiToiDa"],
-                        row["TinhTrangPhong"]
+                        row["SoNguoiToiDa"]
                     );
                 }
             }
