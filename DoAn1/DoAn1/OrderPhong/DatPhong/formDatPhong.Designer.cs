@@ -36,10 +36,8 @@
             button1 = new Button();
             MaPhong = new DataGridViewTextBoxColumn();
             MaLoaiPhong = new DataGridViewTextBoxColumn();
-            MaKhachHang = new DataGridViewTextBoxColumn();
-            NgayNhan = new DataGridViewTextBoxColumn();
-            NgayDuKienTra = new DataGridViewTextBoxColumn();
-            GhiChu = new DataGridViewTextBoxColumn();
+            DonGia = new DataGridViewTextBoxColumn();
+            TinhTrangPhong = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -60,12 +58,13 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             BangKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             BangKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaPhong, MaLoaiPhong, MaKhachHang, NgayNhan, NgayDuKienTra, GhiChu });
+            BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaPhong, MaLoaiPhong, DonGia, TinhTrangPhong });
             BangKhachHang.Dock = DockStyle.Bottom;
             BangKhachHang.EnableHeadersVisualStyles = false;
             BangKhachHang.Location = new Point(0, 196);
             BangKhachHang.Name = "BangKhachHang";
             BangKhachHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            BangKhachHang.RowHeadersVisible = false;
             BangKhachHang.Size = new Size(800, 254);
             BangKhachHang.TabIndex = 0;
             BangKhachHang.CellContentClick += BangKhachHang_CellContentClick;
@@ -85,11 +84,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(229, 131);
+            label1.Location = new Point(297, 151);
             label1.Name = "label1";
-            label1.Size = new Size(336, 25);
+            label1.Size = new Size(200, 25);
             label1.TabIndex = 2;
-            label1.Text = "DANH SÁCH PHÒNG ĐÃ ĐƯỢC ĐẶT";
+            label1.Text = "DANH SÁCH PHÒNG";
             label1.Click += label1_Click;
             // 
             // SuaThongTinDatPhong
@@ -116,9 +115,10 @@
             // 
             // MaPhong
             // 
-            MaPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            MaPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             MaPhong.HeaderText = "Mã Phòng";
             MaPhong.Name = "MaPhong";
+            MaPhong.Width = 279;
             // 
             // MaLoaiPhong
             // 
@@ -126,29 +126,17 @@
             MaLoaiPhong.HeaderText = "Mã Loại Phòng";
             MaLoaiPhong.Name = "MaLoaiPhong";
             // 
-            // MaKhachHang
+            // DonGia
             // 
-            MaKhachHang.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            MaKhachHang.HeaderText = "Mã Khách Hàng";
-            MaKhachHang.Name = "MaKhachHang";
+            DonGia.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DonGia.HeaderText = "Đơn Giá";
+            DonGia.Name = "DonGia";
             // 
-            // NgayNhan
+            // TinhTrangPhong
             // 
-            NgayNhan.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NgayNhan.HeaderText = "Ngày Nhận";
-            NgayNhan.Name = "NgayNhan";
-            // 
-            // NgayDuKienTra
-            // 
-            NgayDuKienTra.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NgayDuKienTra.HeaderText = "Ngày Dự Kiến Trả";
-            NgayDuKienTra.Name = "NgayDuKienTra";
-            // 
-            // GhiChu
-            // 
-            GhiChu.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            GhiChu.HeaderText = "Ghi Chú";
-            GhiChu.Name = "GhiChu";
+            TinhTrangPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            TinhTrangPhong.HeaderText = "Tình Trạng Phòng";
+            TinhTrangPhong.Name = "TinhTrangPhong";
             // 
             // formDatPhong
             // 
@@ -178,9 +166,7 @@
         private Button button1;
         private DataGridViewTextBoxColumn MaPhong;
         private DataGridViewTextBoxColumn MaLoaiPhong;
-        private DataGridViewTextBoxColumn MaKhachHang;
-        private DataGridViewTextBoxColumn NgayNhan;
-        private DataGridViewTextBoxColumn NgayDuKienTra;
-        private DataGridViewTextBoxColumn GhiChu;
+        private DataGridViewTextBoxColumn DonGia;
+        private DataGridViewTextBoxColumn TinhTrangPhong;
     }
 }

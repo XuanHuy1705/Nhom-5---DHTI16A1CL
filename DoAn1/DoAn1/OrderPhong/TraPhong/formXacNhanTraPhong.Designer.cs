@@ -1,6 +1,6 @@
-﻿namespace DoAn1.DichVuThem
+﻿namespace DoAn1.OrderPhong.SuaPhong
 {
-    partial class formChonPhong
+    partial class formXacNhanTraPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,60 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ChonMaPhong = new ComboBox();
+            comboBoxDanhSachPhongCanThanhToan = new ComboBox();
             label1 = new Label();
+            label2 = new Label();
             XacNhan = new Button();
             SuspendLayout();
             // 
-            // ChonMaPhong
+            // comboBoxDanhSachPhongCanThanhToan
             // 
-            ChonMaPhong.FormattingEnabled = true;
-            ChonMaPhong.Location = new Point(156, 69);
-            ChonMaPhong.Name = "ChonMaPhong";
-            ChonMaPhong.Size = new Size(225, 23);
-            ChonMaPhong.TabIndex = 0;
-            ChonMaPhong.SelectedIndexChanged += ChonMaPhong_SelectedIndexChanged;
+            comboBoxDanhSachPhongCanThanhToan.FormattingEnabled = true;
+            comboBoxDanhSachPhongCanThanhToan.Location = new Point(181, 111);
+            comboBoxDanhSachPhongCanThanhToan.Name = "comboBoxDanhSachPhongCanThanhToan";
+            comboBoxDanhSachPhongCanThanhToan.Size = new Size(216, 23);
+            comboBoxDanhSachPhongCanThanhToan.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(59, 72);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(75, 111);
             label1.Name = "label1";
-            label1.Size = new Size(80, 20);
+            label1.Size = new Size(88, 21);
             label1.TabIndex = 1;
-            label1.Text = "Mã phòng";
+            label1.Text = "Mã Phòng";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(148, 40);
+            label2.Name = "label2";
+            label2.Size = new Size(273, 30);
+            label2.TabIndex = 2;
+            label2.Text = "XÁC NHẬN THANH TOÁN";
             // 
             // XacNhan
             // 
             XacNhan.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            XacNhan.Location = new Point(203, 124);
+            XacNhan.Location = new Point(241, 191);
             XacNhan.Name = "XacNhan";
-            XacNhan.Size = new Size(123, 40);
-            XacNhan.TabIndex = 2;
+            XacNhan.Size = new Size(89, 39);
+            XacNhan.TabIndex = 3;
             XacNhan.Text = "Xác Nhận";
             XacNhan.UseVisualStyleBackColor = true;
             XacNhan.Click += XacNhan_Click;
             // 
-            // formChonPhong
+            // formXacNhanTraPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(501, 227);
+            ClientSize = new Size(547, 273);
             Controls.Add(XacNhan);
+            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(ChonMaPhong);
-            Name = "formChonPhong";
-            Text = "formChonPhong";
-            Load += formChonPhong_Load_1;
+            Controls.Add(comboBoxDanhSachPhongCanThanhToan);
+            Name = "formXacNhanTraPhong";
+            Text = "Xác Nhận Thanh Toán";
+            Load += formXacNhanTraPhong_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ComboBox ChonMaPhong;
+        private ComboBox comboBoxDanhSachPhongCanThanhToan;
         private Label label1;
+        private Label label2;
         private Button XacNhan;
     }
 }

@@ -38,15 +38,19 @@
             NgayNhan = new DataGridViewTextBoxColumn();
             NgayDuKienTra = new DataGridViewTextBoxColumn();
             GhiChu = new DataGridViewTextBoxColumn();
+            TimKiemMaPhong = new Button();
+            label2 = new Label();
+            TimKiem = new TextBox();
+            TraPhong = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(592, 135);
+            button1.Location = new Point(632, 153);
             button1.Name = "button1";
-            button1.Size = new Size(138, 38);
+            button1.Size = new Size(126, 32);
             button1.TabIndex = 7;
             button1.Text = "Làm mới dữ liệu";
             button1.UseVisualStyleBackColor = true;
@@ -56,7 +60,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(187, 140);
+            label1.Location = new Point(227, 9);
             label1.Name = "label1";
             label1.Size = new Size(336, 25);
             label1.TabIndex = 6;
@@ -125,11 +129,54 @@
             GhiChu.HeaderText = "Ghi Chú";
             GhiChu.Name = "GhiChu";
             // 
+            // TimKiemMaPhong
+            // 
+            TimKiemMaPhong.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TimKiemMaPhong.Location = new Point(305, 152);
+            TimKiemMaPhong.Name = "TimKiemMaPhong";
+            TimKiemMaPhong.Size = new Size(91, 32);
+            TimKiemMaPhong.TabIndex = 8;
+            TimKiemMaPhong.Text = "Tìm Kiếm";
+            TimKiemMaPhong.UseVisualStyleBackColor = true;
+            TimKiemMaPhong.Click += TimKiemMaPhong_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(31, 158);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 17);
+            label2.TabIndex = 9;
+            label2.Text = "Mã phòng";
+            // 
+            // TimKiem
+            // 
+            TimKiem.Location = new Point(110, 155);
+            TimKiem.Name = "TimKiem";
+            TimKiem.Size = new Size(170, 23);
+            TimKiem.TabIndex = 10;
+            // 
+            // TraPhong
+            // 
+            TraPhong.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TraPhong.Location = new Point(472, 152);
+            TraPhong.Name = "TraPhong";
+            TraPhong.Size = new Size(91, 32);
+            TraPhong.TabIndex = 11;
+            TraPhong.Text = "Trả Phòng";
+            TraPhong.UseVisualStyleBackColor = true;
+            TraPhong.Click += TraPhong_Click;
+            // 
             // formTraPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(TraPhong);
+            Controls.Add(TimKiem);
+            Controls.Add(label2);
+            Controls.Add(TimKiemMaPhong);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(BangKhachHang);
@@ -153,5 +200,9 @@
         private DataGridViewTextBoxColumn NgayNhan;
         private DataGridViewTextBoxColumn NgayDuKienTra;
         private DataGridViewTextBoxColumn GhiChu;
+        private Button TimKiemMaPhong;
+        private Label label2;
+        private TextBox TimKiem;
+        private Button TraPhong;
     }
 }

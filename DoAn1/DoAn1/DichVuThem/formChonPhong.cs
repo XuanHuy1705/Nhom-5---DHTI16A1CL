@@ -53,7 +53,7 @@ namespace DoAn1.DichVuThem
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
-                string query = "SELECT MaPhong FROM DANH_SACH_PHONG_CHO_THUE WHERE TinhTrangPhong = 'True'";
+                string query = "SELECT MaPhong FROM DANH_SACH_PHONG_DA_CHO_THUE";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 ChonMaPhong.Items.Clear();
@@ -62,6 +62,11 @@ namespace DoAn1.DichVuThem
                     ChonMaPhong.Items.Add(reader["MaPhong"].ToString());
                 }
             }
+        }
+
+        private void ChonMaPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

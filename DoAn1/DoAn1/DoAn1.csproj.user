@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="DanhSachPhong\formDanhSachLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DichVuThem\formChonDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -19,13 +22,13 @@
     <Compile Update="GiaoDienChinh\formDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formDanhSachPhong.cs">
+    <Compile Update="DanhSachPhong\formDanhSachPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderPhong\formChonPhongSuaThongTin.cs">
+    <Compile Update="OrderPhong\DatPhong\formChonPhongSuaThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderPhong\formDatPhong.cs">
+    <Compile Update="OrderPhong\DatPhong\formDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DichVuThem\formDichVuThem.cs">
@@ -43,16 +46,19 @@
     <Compile Update="CapNhatThongTin\formThongTinCanSua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderPhong\formSuaThongTinDatPhong.cs">
+    <Compile Update="OrderPhong\DatPhong\formSuaThongTinDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderPhong\formThemThongTinDatPhong.cs">
+    <Compile Update="OrderPhong\DatPhong\formThemThongTinDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderPhong\formTraPhong.cs">
+    <Compile Update="OrderPhong\TraPhong\formTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CapNhatThongTin\formXoaThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OrderPhong\TraPhong\formXacNhanTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

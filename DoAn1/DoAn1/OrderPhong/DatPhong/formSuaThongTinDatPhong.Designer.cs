@@ -152,6 +152,7 @@
             MaLoaiPhong.Name = "MaLoaiPhong";
             MaLoaiPhong.Size = new Size(247, 23);
             MaLoaiPhong.TabIndex = 14;
+            MaLoaiPhong.SelectedIndexChanged += MaLoaiPhong_SelectedIndexChanged;
             // 
             // label1
             // 

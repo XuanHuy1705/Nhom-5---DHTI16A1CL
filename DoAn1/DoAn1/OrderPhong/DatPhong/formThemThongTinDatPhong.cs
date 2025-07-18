@@ -51,8 +51,9 @@ namespace DoAn1.OrderPhong
                 try
                 {
                     con.Open();
-                    string query = @"SELECT MaPhong FROM DANH_SACH_PHONG_CHO_THUE 
-                                     WHERE MaLoaiPhong = @MaLoaiPhong AND TinhTrangPhong ='False'";
+                    // Lấy các phòng có MaLoaiPhong tương ứng và TinhTrangPhong = 0 (False)
+                    string query = @"SELECT MaPhong FROM DANH_SACH_PHONG_THUE 
+                             WHERE MaLoaiPhong = @MaLoaiPhong AND TinhTrangPhong = 0";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@MaLoaiPhong", maLoaiPhong);
                     SqlDataReader reader = cmd.ExecuteReader();
@@ -102,23 +103,25 @@ namespace DoAn1.OrderPhong
                 try
                 {
                     con.Open();
-                    // Update booking info and set TinhTrangPhong = 'True'
-                    string updateQuery = @"UPDATE DANH_SACH_PHONG_CHO_THUE SET 
-                                    MaKhachHang = @MaKhachHang, 
-                                    NgayNhan = @NgayNhan, 
-                                    NgayDuKienTra = @NgayDuKienTra, 
-                                    GhiChu = @GhiChu, 
-                                    TinhTrangPhong = @TinhTrangPhong 
-                                   WHERE MaPhong = @MaPhong AND MaLoaiPhong = @MaLoaiPhong";
-                    SqlCommand cmd = new SqlCommand(updateQuery, con);
+                    string insertQuery = @"INSERT INTO DANH_SACH_PHONG_DA_CHO_THUE 
+                (MaPhong, MaLoaiPhong, MaKhachHang, NgayNhan, NgayDuKienTra, GhiChu)
+                VALUES (@MaPhong, @MaLoaiPhong, @MaKhachHang, @NgayNhan, @NgayDuKienTra, @GhiChu)";
+                    SqlCommand cmd = new SqlCommand(insertQuery, con);
                     cmd.Parameters.AddWithValue("@MaPhong", maPhong);
                     cmd.Parameters.AddWithValue("@MaLoaiPhong", maLoaiPhong);
                     cmd.Parameters.AddWithValue("@MaKhachHang", maKhachHang);
                     cmd.Parameters.AddWithValue("@NgayNhan", ngayNhan);
                     cmd.Parameters.AddWithValue("@NgayDuKienTra", ngayDuKienTra);
                     cmd.Parameters.AddWithValue("@GhiChu", ghiChu);
-                    cmd.Parameters.AddWithValue("@TinhTrangPhong", true);
                     cmd.ExecuteNonQuery();
+
+                    string updateQuery = @"UPDATE DANH_SACH_PHONG_THUE 
+                                   SET TinhTrangPhong = 1 
+                                   WHERE MaPhong = @MaPhong AND MaLoaiPhong = @MaLoaiPhong";
+                    SqlCommand updateCmd = new SqlCommand(updateQuery, con);
+                    updateCmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                    updateCmd.Parameters.AddWithValue("@MaLoaiPhong", maLoaiPhong);
+                    updateCmd.ExecuteNonQuery();
 
                     MessageBox.Show("Đặt phòng thành công!");
                     this.DialogResult = DialogResult.OK;

@@ -54,5 +54,10 @@ namespace DoAn1.DichVuThem
         {
 
         }
+
+        private void DichVuDaDat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

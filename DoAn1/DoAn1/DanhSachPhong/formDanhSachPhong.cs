@@ -19,7 +19,7 @@ namespace DoAn1
         SqlDataAdapter adt;
         DataTable dt;
 
-        private void ExportDataToGrid()
+        private void ExportDataToGrid(string filter = "")
         {
             BangDanhSachPhong.Rows.Clear();
 
@@ -27,19 +27,27 @@ namespace DoAn1
             try
             {
                 con.Open();
-                cmd = new SqlCommand("SELECT * FROM LOAI_PHONG", con);
+                string query = "SELECT MaPhong, MaLoaiPhong, DonGia, TinhTrangPhong FROM DANH_SACH_PHONG_THUE";
+                if (!string.IsNullOrEmpty(filter))
+                {
+                    query += " WHERE " + filter;
+                }
+                cmd = new SqlCommand(query, con);
                 adt = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 adt.Fill(dt);
 
                 foreach (DataRow row in dt.Rows)
                 {
+                    string tinhTrang = (row["TinhTrangPhong"] != DBNull.Value && (bool)row["TinhTrangPhong"])
+                        ? "Đã Đặt"
+                        : "Trống";
+
                     BangDanhSachPhong.Rows.Add(
+                        row["MaPhong"],
                         row["MaLoaiPhong"],
-                        row["TenLoaiPhong"],
                         row["DonGia"],
-                        row["SoNguoiChuan"],
-                        row["SoNguoiToiDa"]
+                        tinhTrang
                     );
                 }
             }
@@ -75,6 +83,27 @@ namespace DoAn1
         private void BangDanhSachPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void NutDanhSach_Click(object sender, EventArgs e)
+        {
+            var frm = new DoAn1.DanhSachPhong.formDanhSachLoaiPhong();
+            frm.ShowDialog(); // hoặc frm.Show()
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ExportDataToGrid("TinhTrangPhong = 1");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExportDataToGrid("TinhTrangPhong = 0");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ExportDataToGrid();
         }
     }
 }

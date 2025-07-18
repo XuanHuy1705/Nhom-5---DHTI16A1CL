@@ -33,7 +33,7 @@ namespace DoAn1.OrderPhong
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
-                string query = "SELECT MaPhong FROM DANH_SACH_PHONG_CHO_THUE WHERE TinhTrangPhong = 'True'";
+                string query = "SELECT MaPhong FROM DANH_SACH_PHONG_THUE WHERE TinhTrangPhong = 'True'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
