@@ -53,3 +53,5 @@ D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuT
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.formThemThongTinDatPhong.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.formChonPhongSuaThongTin.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.formSuaThongTinDatPhong.resources
+D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.formChonDichVu.resources
+D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.formChonPhong.resources

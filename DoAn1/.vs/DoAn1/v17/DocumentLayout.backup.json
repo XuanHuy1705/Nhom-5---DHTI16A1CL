@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\formdichvuthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\formdichvuthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\thongtindichvudadung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\thongtindichvudadung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\thongtindichvudadung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\thongtindichvudadung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\formdichvuthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\formdichvuthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\formdanhsachphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\formdanhsachphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formthemthongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formsuathongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formsuathongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formsuathongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\doan1\\orderphong\\formsuathongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formsuathongtindatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\formchonphongsuathongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\doan1\\orderphong\\formchonphongsuathongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\formchonphongsuathongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,61 +58,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "formThemThongTinDatPhong.cs",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
-              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs*",
-              "RelativeToolTip": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs*",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwHQAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ThongTinDichVuDaDung.cs",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs",
+              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs*",
+              "RelativeToolTip": "DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T17:13:37.165Z",
+              "WhenOpened": "2025-07-18T10:02:15.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "formDichVuThem.cs",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formDichVuThem.cs",
+              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\formDichVuThem.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formDichVuThem.cs*",
+              "RelativeToolTip": "DoAn1\\DichVuThem\\formDichVuThem.cs*",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwIYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:54:48.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "formDichVuThem.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formDichVuThem.cs",
+              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\formDichVuThem.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formDichVuThem.cs [Design]*",
+              "RelativeToolTip": "DoAn1\\DichVuThem\\formDichVuThem.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:20:33.409Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThongTinDichVuDaDung.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs",
+              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs [Design]*",
+              "RelativeToolTip": "DoAn1\\DichVuThem\\ThongTinDichVuDaDung.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:20:12.673Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "formChonDichVu.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs",
+              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\formChonDichVu.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs [Design]",
+              "RelativeToolTip": "DoAn1\\DichVuThem\\formChonDichVu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T08:42:27.041Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\Program.cs",
+              "RelativeDocumentMoniker": "DoAn1\\Program.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\Program.cs",
+              "RelativeToolTip": "DoAn1\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T02:13:39.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "formDatPhong.cs [Design]",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs",
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formDatPhong.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs [Design]*",
-              "RelativeToolTip": "DoAn1\\OrderPhong\\formDatPhong.cs [Design]*",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs [Design]",
+              "RelativeToolTip": "DoAn1\\OrderPhong\\formDatPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T17:07:39.829Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "formThemThongTinDatPhong.cs [Design]",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
-              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs [Design]*",
-              "RelativeToolTip": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs [Design]*",
+              "DocumentIndex": 7,
+              "Title": "formDanhSachPhong.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\formDanhSachPhong.cs",
+              "RelativeDocumentMoniker": "DoAn1\\formDanhSachPhong.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\formDanhSachPhong.cs [Design]",
+              "RelativeToolTip": "DoAn1\\formDanhSachPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T17:02:30.367Z",
+              "WhenOpened": "2025-07-18T06:50:49.021Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "formDatPhong.cs",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs",
-              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formDatPhong.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formDatPhong.cs*",
-              "RelativeToolTip": "DoAn1\\OrderPhong\\formDatPhong.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwDgAAAARAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "formThemThongTinDatPhong.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs [Design]",
+              "RelativeToolTip": "DoAn1\\OrderPhong\\formThemThongTinDatPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T16:22:40.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T17:02:30.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "formSuaThongTinDatPhong.cs",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs",
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs",
@@ -109,19 +185,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "formSuaThongTinDatPhong.cs [Design]",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs",
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs",
               "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs [Design]",
               "RelativeToolTip": "DoAn1\\OrderPhong\\formSuaThongTinDatPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T16:06:19.554Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-17T16:06:19.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "formChonPhongSuaThongTin.cs [Design]",
               "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\formChonPhongSuaThongTin.cs",
               "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\formChonPhongSuaThongTin.cs",
@@ -130,19 +205,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T16:36:43.342Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\Program.cs",
-              "RelativeDocumentMoniker": "DoAn1\\Program.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\Program.cs",
-              "RelativeToolTip": "DoAn1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T02:13:39.134Z",
-              "EditorCaption": ""
             }
           ]
         }

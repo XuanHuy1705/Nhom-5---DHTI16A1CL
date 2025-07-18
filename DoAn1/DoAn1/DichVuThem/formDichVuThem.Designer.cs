@@ -137,7 +137,7 @@
             TraCuu.TabIndex = 4;
             TraCuu.Text = "Tra cứu";
             TraCuu.UseVisualStyleBackColor = true;
-            TraCuu.Click += this.TraCuu_Click;
+            TraCuu.Click += TraCuu_Click;
             // 
             // label3
             // 
@@ -156,8 +156,9 @@
             button3.Name = "button3";
             button3.Size = new Size(165, 56);
             button3.TabIndex = 8;
-            button3.Text = "Đặt dịch vụ mới";
+            button3.Text = "Đặt Dịch Vụ";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // ShowaAll
             // 

@@ -30,9 +30,9 @@
         {
             DichVuDaDat = new DataGridView();
             label1 = new Label();
-            MaDichVu = new DataGridViewTextBoxColumn();
             MaPhong = new DataGridViewTextBoxColumn();
-            SoLuong = new DataGridViewTextBoxColumn();
+            DichVuDaDung = new DataGridViewTextBoxColumn();
+            TongTienDichVu = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)DichVuDaDat).BeginInit();
             SuspendLayout();
             // 
@@ -43,12 +43,12 @@
             DichVuDaDat.AllowUserToResizeColumns = false;
             DichVuDaDat.AllowUserToResizeRows = false;
             DichVuDaDat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DichVuDaDat.Columns.AddRange(new DataGridViewColumn[] { MaDichVu, MaPhong, SoLuong });
+            DichVuDaDat.Columns.AddRange(new DataGridViewColumn[] { MaPhong, DichVuDaDung, TongTienDichVu });
             DichVuDaDat.Dock = DockStyle.Bottom;
-            DichVuDaDat.Location = new Point(0, 109);
+            DichVuDaDat.Location = new Point(0, 111);
             DichVuDaDat.Name = "DichVuDaDat";
             DichVuDaDat.RowHeadersVisible = false;
-            DichVuDaDat.Size = new Size(477, 189);
+            DichVuDaDat.Size = new Size(459, 179);
             DichVuDaDat.TabIndex = 0;
             DichVuDaDat.CellContentClick += DichVuDaDat_CellContentClick;
             // 
@@ -62,33 +62,32 @@
             label1.TabIndex = 1;
             label1.Text = "THÔNG TIN DỊCH VỤ ĐÃ ĐẶT";
             // 
-            // MaDichVu
-            // 
-            MaDichVu.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            MaDichVu.HeaderText = "Mã Dịch Vụ";
-            MaDichVu.Name = "MaDichVu";
-            // 
             // MaPhong
             // 
-            MaPhong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             MaPhong.HeaderText = "Mã Phòng";
             MaPhong.Name = "MaPhong";
             // 
-            // SoLuong
+            // DichVuDaDung
             // 
-            SoLuong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            SoLuong.HeaderText = "Số Lượng";
-            SoLuong.Name = "SoLuong";
+            DichVuDaDung.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DichVuDaDung.HeaderText = "Dịch Vụ Đã Dùng";
+            DichVuDaDung.Name = "DichVuDaDung";
+            // 
+            // TongTienDichVu
+            // 
+            TongTienDichVu.HeaderText = "Tổng Tiền";
+            TongTienDichVu.Name = "TongTienDichVu";
             // 
             // ThongTinDichVuDaDung
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(477, 298);
+            ClientSize = new Size(459, 290);
             Controls.Add(label1);
             Controls.Add(DichVuDaDat);
             Name = "ThongTinDichVuDaDung";
             Text = "Thông Tin Dịch Vụ";
+            Load += ThongTinDichVuDaDung_Load;
             ((System.ComponentModel.ISupportInitialize)DichVuDaDat).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -97,9 +96,9 @@
         #endregion
 
         private DataGridView DichVuDaDat;
-        private DataGridViewTextBoxColumn MaDichVu;
-        private DataGridViewTextBoxColumn MaPhong;
-        private DataGridViewTextBoxColumn SoLuong;
         private Label label1;
+        private DataGridViewTextBoxColumn MaPhong;
+        private DataGridViewTextBoxColumn DichVuDaDung;
+        private DataGridViewTextBoxColumn TongTienDichVu;
     }
 }

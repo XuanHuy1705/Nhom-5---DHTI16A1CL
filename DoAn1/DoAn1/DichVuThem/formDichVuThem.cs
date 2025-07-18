@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAn1.DichVuThem;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -104,7 +105,7 @@ namespace DoAn1
 
         private void ShowaAll_Click(object sender, EventArgs e)
         {
-                        LoadDichVuData();
+            LoadDichVuData();
         }
         private void TraCuu_Click(object sender, EventArgs e)
         {
@@ -120,21 +121,20 @@ namespace DoAn1
                 try
                 {
                     con.Open();
-                    string query = "SELECT * FROM DANH_SACH_SU_DUNG_DICH_VU WHERE MaPhong = @MaPhong";
-                    SqlDataAdapter adt = new SqlDataAdapter(query, con);
-                    adt.SelectCommand.Parameters.AddWithValue("@MaPhong", maPhong);
-                    DataTable dt = new DataTable();
-                    adt.Fill(dt);
+                    string query = "SELECT COUNT(*) FROM DANH_SACH_DICH_VU_DUNG WHERE MaPhong = @MaPhong";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                    int count = (int)cmd.ExecuteScalar();
 
-                    if (dt.Rows.Count > 0)
+                    if (count > 0)
                     {
-                        // Truyền DataTable sang form ThongTinDichVuDaDung để hiển thị
-                        var thongTinForm = new DoAn1.DichVuThem.ThongTinDichVuDaDung(dt);
+                        // Chuyển sang formThongTinDichVuDaDung, truyền mã phòng
+                        var thongTinForm = new DoAn1.DichVuThem.ThongTinDichVuDaDung(maPhong);
                         thongTinForm.ShowDialog();
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy thông tin dịch vụ cho mã phòng này.");
+                        MessageBox.Show("Phòng này chưa đặt dịch vụ nào.");
                     }
                 }
                 catch (Exception ex)
@@ -142,6 +142,12 @@ namespace DoAn1
                     MessageBox.Show("Lỗi tra cứu: " + ex.Message);
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var chonPhongForm = new formChonPhong();
+            chonPhongForm.ShowDialog();
         }
     }
 }

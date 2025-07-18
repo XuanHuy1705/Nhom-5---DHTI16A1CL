@@ -14,28 +14,43 @@ namespace DoAn1.DichVuThem
     public partial class ThongTinDichVuDaDung : Form
     {
         string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLKhachSan;Integrated Security=True";
+
         public ThongTinDichVuDaDung()
         {
             InitializeComponent();
         }
-        public ThongTinDichVuDaDung(DataTable data)
+
+        // Constructor nhận MaPhong, tự truy vấn và hiển thị dữ liệu
+        public ThongTinDichVuDaDung(string maPhong)
         {
             InitializeComponent();
-            LoadData(data);
+            LoadData(maPhong);
         }
-        private void LoadData(DataTable data)
+
+        private void LoadData(string maPhong)
         {
-            foreach (DataRow row in data.Rows)
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                DichVuDaDat.Rows.Add(
-                    row["MaDichVu"],
-                    row["MaPhong"],
-                    row["SoLuong"]
-                );
+                con.Open();
+                string query = "SELECT MaPhong, DichVuDaDung, TongTienDichVu FROM DANH_SACH_DICH_VU_DUNG WHERE MaPhong = @MaPhong";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@MaPhong", maPhong);
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        // Hiển thị lên DataGridView
+                        DichVuDaDat.Rows.Add(
+                            reader["MaPhong"].ToString(),
+                            reader["DichVuDaDung"].ToString(),
+                            reader["TongTienDichVu"].ToString()
+                        );
+                    }
+                }
             }
         }
 
-        private void DichVuDaDat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ThongTinDichVuDaDung_Load(object sender, EventArgs e)
         {
 
         }
