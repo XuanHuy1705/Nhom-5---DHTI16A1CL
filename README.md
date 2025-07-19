@@ -5,11 +5,11 @@
 
 - Đây là ứng dụng được sử dụng làm đồ án cuối kỳ cho môn Nhập môn Công nghệ phần mềm.
 - Ứng dụng được xây dựng theo mô hình 3 lớp, sử dụng Entity Framework, thiết kế giao diện bằng C# WinForms.
-- Thông tin chi tiết về project có thể tìm đọc trong file `Report.docx`.
+- Thông tin chi tiết về project có thể tìm đọc trong file `Báo Cáo.docx`.
 
 ## Giảng viên hướng dẫn
 
-- ThS. Đoàn Tuấn Nam – Khoa Công nghệ thông tin, Trường Đại học Kinh tế Kỹ thuật Công nghiệp
+- Đoàn Tuấn Nam – Khoa Công nghệ thông tin, Trường Đại học Kinh tế Kỹ thuật Công nghiệp
 
 ## Sinh viên thực hiện
 
@@ -23,14 +23,14 @@
 ### Yêu cầu để thực thi project
 
 - Visual Studio 2022
-- .NET Framework 4.7.2
+- .NET Framework 8.0
 - SQL Server
 
 ---
 
 ### Bước 1: Khởi tạo database
 
-- Thực thi file `QLKhachSan_TaoCSDL.sql` để khởi tạo database `QLKhachSan`.
+- Thực thi file `QLKhachSan.sql` để khởi tạo database `QLKhachSan`.
 
 ### Bước 2: Thực thi chương trình
 
