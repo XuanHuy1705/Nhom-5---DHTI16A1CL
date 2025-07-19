@@ -73,5 +73,11 @@ namespace DoAn1
                 con.Close();
             }
         }
+
+        private void DangKy_Click(object sender, EventArgs e)
+        {
+            var frm = new DoAn1.GiaoDienChinh.formDangKy();
+            frm.ShowDialog();
+        }
     }
 }

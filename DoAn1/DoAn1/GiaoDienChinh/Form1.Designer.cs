@@ -45,6 +45,7 @@
             button2 = new Button();
             menuTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
+            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
@@ -92,11 +93,12 @@
             sidebar.Controls.Add(button5);
             sidebar.Controls.Add(button4);
             sidebar.Controls.Add(button6);
+            sidebar.Controls.Add(button3);
             sidebar.Controls.Add(button2);
             sidebar.Dock = DockStyle.Left;
             sidebar.Location = new Point(0, 41);
             sidebar.Name = "sidebar";
-            sidebar.Size = new Size(185, 521);
+            sidebar.Size = new Size(185, 571);
             sidebar.TabIndex = 1;
             // 
             // menuContainer
@@ -229,7 +231,7 @@
             button2.ForeColor = Color.Cornsilk;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(1, 280);
+            button2.Location = new Point(1, 335);
             button2.Margin = new Padding(1);
             button2.Name = "button2";
             button2.Size = new Size(182, 53);
@@ -247,11 +249,27 @@
             sidebarTransition.Interval = 10;
             sidebarTransition.Tick += sidebarTransition_Tick;
             // 
+            // button3
+            // 
+            button3.AccessibleRole = AccessibleRole.PageTabList;
+            button3.BackColor = Color.FromArgb(23, 24, 29);
+            button3.ForeColor = Color.Cornsilk;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(1, 280);
+            button3.Margin = new Padding(1);
+            button3.Name = "button3";
+            button3.Size = new Size(182, 53);
+            button3.TabIndex = 8;
+            button3.Text = "Đăng Xuất";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(940, 562);
+            ClientSize = new Size(940, 612);
             Controls.Add(sidebar);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -283,5 +301,6 @@
         private System.Windows.Forms.Timer sidebarTransition;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

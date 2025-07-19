@@ -13,6 +13,12 @@
     <Compile Update="DichVuThem\ThongTinDichVuDaDung.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GiaoDienChinh\formDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan\formChonThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GiaoDienChinh\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -40,7 +46,10 @@
     <Compile Update="CapNhatThongTin\formSuaThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formThanhToan.cs">
+    <Compile Update="ThanhToan\formLichSuHoaDonThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan\formThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CapNhatThongTin\formThongTinCanSua.cs">
@@ -59,6 +68,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="OrderPhong\TraPhong\formXacNhanTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan\formTienThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

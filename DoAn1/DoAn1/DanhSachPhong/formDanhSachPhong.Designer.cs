@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             NutDanhSach = new Button();
             label1 = new Label();
             BangDanhSachPhong = new DataGridView();
@@ -38,9 +41,6 @@
             Ma_loai_phong = new DataGridViewTextBoxColumn();
             Don_gia = new DataGridViewTextBoxColumn();
             TinhTrangPhong = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BangDanhSachPhong).BeginInit();
             SuspendLayout();
@@ -54,11 +54,45 @@
             panel1.Controls.Add(NutDanhSach);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(BangDanhSachPhong);
-            panel1.Location = new Point(1, -1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(799, 439);
+            panel1.Size = new Size(800, 450);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(616, 108);
+            button3.Name = "button3";
+            button3.Size = new Size(147, 63);
+            button3.TabIndex = 6;
+            button3.Text = "Tất cả";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(431, 107);
+            button2.Name = "button2";
+            button2.Size = new Size(147, 63);
+            button2.TabIndex = 5;
+            button2.Text = "Phòng đã đặt";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(231, 107);
+            button1.Name = "button1";
+            button1.Size = new Size(147, 63);
+            button1.TabIndex = 4;
+            button1.Text = "Phòng còn trống";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // NutDanhSach
             // 
@@ -88,30 +122,30 @@
             BangDanhSachPhong.BorderStyle = BorderStyle.None;
             BangDanhSachPhong.CellBorderStyle = DataGridViewCellBorderStyle.None;
             BangDanhSachPhong.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = SystemColors.ControlLightLight;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            BangDanhSachPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            BangDanhSachPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             BangDanhSachPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BangDanhSachPhong.Columns.AddRange(new DataGridViewColumn[] { MaPhong, Ma_loai_phong, Don_gia, TinhTrangPhong });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            BangDanhSachPhong.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            BangDanhSachPhong.DefaultCellStyle = dataGridViewCellStyle2;
             BangDanhSachPhong.Dock = DockStyle.Bottom;
             BangDanhSachPhong.EnableHeadersVisualStyles = false;
-            BangDanhSachPhong.Location = new Point(0, 201);
+            BangDanhSachPhong.Location = new Point(0, 212);
             BangDanhSachPhong.Name = "BangDanhSachPhong";
             BangDanhSachPhong.RowHeadersVisible = false;
-            BangDanhSachPhong.Size = new Size(799, 238);
+            BangDanhSachPhong.Size = new Size(800, 238);
             BangDanhSachPhong.TabIndex = 0;
             BangDanhSachPhong.CellContentClick += BangDanhSachPhong_CellContentClick;
             // 
@@ -136,39 +170,6 @@
             // 
             TinhTrangPhong.HeaderText = "Tình Trạng Phòng";
             TinhTrangPhong.Name = "TinhTrangPhong";
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(231, 107);
-            button1.Name = "button1";
-            button1.Size = new Size(147, 63);
-            button1.TabIndex = 4;
-            button1.Text = "Phòng còn trống";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(431, 107);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 63);
-            button2.TabIndex = 5;
-            button2.Text = "Phòng đã đặt";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(616, 108);
-            button3.Name = "button3";
-            button3.Size = new Size(147, 63);
-            button3.TabIndex = 6;
-            button3.Text = "Tất cả";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // formDanhSachPhong
             // 

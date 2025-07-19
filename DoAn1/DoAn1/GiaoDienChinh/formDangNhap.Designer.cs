@@ -34,12 +34,13 @@
             MatKhau = new TextBox();
             label2 = new Label();
             label3 = new Label();
+            DangKy = new Button();
             SuspendLayout();
             // 
             // DangNhap
             // 
             DangNhap.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DangNhap.Location = new Point(209, 290);
+            DangNhap.Location = new Point(140, 282);
             DangNhap.Name = "DangNhap";
             DangNhap.Size = new Size(99, 42);
             DangNhap.TabIndex = 0;
@@ -70,6 +71,7 @@
             MatKhau.Name = "MatKhau";
             MatKhau.Size = new Size(233, 23);
             MatKhau.TabIndex = 3;
+            MatKhau.UseSystemPasswordChar = true;
             MatKhau.TextChanged += textBox2_TextChanged;
             // 
             // label2
@@ -93,11 +95,23 @@
             label3.TabIndex = 5;
             label3.Text = "Mật khẩu";
             // 
+            // DangKy
+            // 
+            DangKy.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DangKy.Location = new Point(274, 282);
+            DangKy.Name = "DangKy";
+            DangKy.Size = new Size(99, 42);
+            DangKy.TabIndex = 6;
+            DangKy.Text = "Đăng ký";
+            DangKy.UseVisualStyleBackColor = true;
+            DangKy.Click += DangKy_Click;
+            // 
             // formDangNhap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(513, 450);
+            Controls.Add(DangKy);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(MatKhau);
@@ -118,5 +132,6 @@
         private TextBox MatKhau;
         private Label label2;
         private Label label3;
+        private Button DangKy;
     }
 }
