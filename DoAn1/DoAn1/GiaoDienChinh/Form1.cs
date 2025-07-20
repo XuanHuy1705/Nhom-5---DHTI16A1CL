@@ -256,7 +256,7 @@
                 var loginForm = new formDangNhap();
                 loginForm.Show();
                 this.Close();
-            }
+             }
         }
     }
 }

@@ -42,10 +42,10 @@
             button5 = new Button();
             button4 = new Button();
             button6 = new Button();
+            button3 = new Button();
             button2 = new Button();
             menuTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
-            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
@@ -224,6 +224,22 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
+            // button3
+            // 
+            button3.AccessibleRole = AccessibleRole.PageTabList;
+            button3.BackColor = Color.FromArgb(23, 24, 29);
+            button3.ForeColor = Color.Cornsilk;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(1, 280);
+            button3.Margin = new Padding(1);
+            button3.Name = "button3";
+            button3.Size = new Size(182, 53);
+            button3.TabIndex = 8;
+            button3.Text = "Đăng Xuất";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // button2
             // 
             button2.AccessibleRole = AccessibleRole.PageTabList;
@@ -249,22 +265,6 @@
             sidebarTransition.Interval = 10;
             sidebarTransition.Tick += sidebarTransition_Tick;
             // 
-            // button3
-            // 
-            button3.AccessibleRole = AccessibleRole.PageTabList;
-            button3.BackColor = Color.FromArgb(23, 24, 29);
-            button3.ForeColor = Color.Cornsilk;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(1, 280);
-            button3.Margin = new Padding(1);
-            button3.Name = "button3";
-            button3.Size = new Size(182, 53);
-            button3.TabIndex = 8;
-            button3.Text = "Đăng Xuất";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -274,7 +274,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Quản Lý Khách Sạn";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

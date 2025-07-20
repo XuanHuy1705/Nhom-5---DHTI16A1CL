@@ -93,7 +93,7 @@
             Controls.Add(label1);
             Controls.Add(LoaiDuLieu);
             Name = "formThongTinCanSua";
-            Text = "formThongTinCanSua";
+            Text = "Tìm Thông Tin Cần Sửa";
             ResumeLayout(false);
             PerformLayout();
         }

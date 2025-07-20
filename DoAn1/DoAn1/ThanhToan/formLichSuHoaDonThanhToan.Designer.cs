@@ -175,7 +175,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "formLichSuHoaDonThanhToan";
-            Text = "formLichSuHoaDonThanhToan";
+            Text = "Lịch Sử Hóa Đơn";
             Load += formLichSuHoaDonThanhToan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

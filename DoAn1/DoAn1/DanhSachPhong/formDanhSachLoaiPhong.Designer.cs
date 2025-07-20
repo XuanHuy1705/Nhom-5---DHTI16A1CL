@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
             BangLoaiPhong = new DataGridView();
             MaLoaiPhong = new DataGridViewTextBoxColumn();
@@ -53,14 +53,14 @@
             // 
             BangLoaiPhong.AllowUserToAddRows = false;
             BangLoaiPhong.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            BangLoaiPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            BangLoaiPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             BangLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             BangLoaiPhong.Columns.AddRange(new DataGridViewColumn[] { MaLoaiPhong, TenLoaiPhong, DonGia, SoNguoiChuan, SoNguoiToiDa });
             BangLoaiPhong.Dock = DockStyle.Bottom;
@@ -105,7 +105,7 @@
             Controls.Add(BangLoaiPhong);
             Controls.Add(label1);
             Name = "formDanhSachLoaiPhong";
-            Text = "formDanhSachLoaiPhong";
+            Text = "Danh Sách Loại Phòng";
             Load += formDanhSachLoaiPhong_Load;
             ((System.ComponentModel.ISupportInitialize)BangLoaiPhong).EndInit();
             ResumeLayout(false);

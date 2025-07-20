@@ -72,7 +72,7 @@
             Controls.Add(label1);
             Controls.Add(ChonMaPhong);
             Name = "formChonPhong";
-            Text = "formChonPhong";
+            Text = "Chọn Phòng Đặt Dịch Vụ";
             Load += formChonPhong_Load_1;
             ResumeLayout(false);
             PerformLayout();

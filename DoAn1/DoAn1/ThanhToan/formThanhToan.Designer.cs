@@ -196,7 +196,7 @@
             Controls.Add(dataGridViewHoaDon);
             FormBorderStyle = FormBorderStyle.None;
             Name = "formThanhToan";
-            Text = "formThanhToan";
+            Text = "Thanh Toán";
             Load += formThanhToan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewHoaDon).EndInit();
             ResumeLayout(false);

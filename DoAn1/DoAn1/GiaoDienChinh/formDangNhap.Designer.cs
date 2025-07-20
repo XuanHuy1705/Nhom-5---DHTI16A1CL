@@ -110,7 +110,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(513, 450);
+            ClientSize = new Size(513, 341);
             Controls.Add(DangKy);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -119,7 +119,7 @@
             Controls.Add(label1);
             Controls.Add(DangNhap);
             Name = "formDangNhap";
-            Text = "formDangNhap";
+            Text = "Đăng Nhập Hệ Thống";
             ResumeLayout(false);
             PerformLayout();
         }

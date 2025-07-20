@@ -136,7 +136,7 @@
             Controls.Add(SoLuongChon);
             Controls.Add(DanhSachDichVu);
             Name = "formChonDichVu";
-            Text = "formChonDichVu";
+            Text = "Đặt Dịch Vụ";
             Load += formChonDichVu_Load_1;
             ((System.ComponentModel.ISupportInitialize)DichVuDaChon).EndInit();
             ResumeLayout(false);

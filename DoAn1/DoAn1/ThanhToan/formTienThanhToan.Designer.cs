@@ -167,7 +167,7 @@
             Controls.Add(label1);
             Controls.Add(TongTien);
             Name = "formTienThanhToan";
-            Text = "formTienThanhToan";
+            Text = "Thanh Toán";
             Load += formTienThanhToan_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
