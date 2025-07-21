@@ -52,10 +52,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(275, 9);
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(234, 43);
             label1.Name = "label1";
-            label1.Size = new Size(252, 25);
+            label1.Size = new Size(357, 37);
             label1.TabIndex = 0;
             label1.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
@@ -79,7 +79,7 @@
             BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaKhachHang, TenKhachHang, CMND, GioiTinh, DiaChi, DienThoai, QuocTich });
             BangKhachHang.Dock = DockStyle.Bottom;
             BangKhachHang.EnableHeadersVisualStyles = false;
-            BangKhachHang.Location = new Point(0, 220);
+            BangKhachHang.Location = new Point(0, 379);
             BangKhachHang.Name = "BangKhachHang";
             BangKhachHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             BangKhachHang.Size = new Size(800, 230);
@@ -131,14 +131,14 @@
             // 
             LoaiTimKiem.FormattingEnabled = true;
             LoaiTimKiem.Items.AddRange(new object[] { "MaKhachHang", "TenKhachHang", "CMND", "GioiTinh", "DiaChi", "DienThoai", "QuocTich" });
-            LoaiTimKiem.Location = new Point(171, 176);
+            LoaiTimKiem.Location = new Point(171, 312);
             LoaiTimKiem.Name = "LoaiTimKiem";
             LoaiTimKiem.Size = new Size(177, 23);
             LoaiTimKiem.TabIndex = 2;
             // 
             // TimKiem
             // 
-            TimKiem.Location = new Point(367, 176);
+            TimKiem.Location = new Point(367, 312);
             TimKiem.Name = "TimKiem";
             TimKiem.Size = new Size(242, 23);
             TimKiem.TabIndex = 3;
@@ -147,7 +147,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(78, 178);
+            label2.Location = new Point(78, 314);
             label2.Name = "label2";
             label2.Size = new Size(74, 20);
             label2.TabIndex = 4;
@@ -157,7 +157,7 @@
             // Check
             // 
             Check.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Check.Location = new Point(638, 177);
+            Check.Location = new Point(638, 313);
             Check.Name = "Check";
             Check.Size = new Size(75, 23);
             Check.TabIndex = 5;
@@ -168,7 +168,7 @@
             // ViewAll
             // 
             ViewAll.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ViewAll.Location = new Point(638, 137);
+            ViewAll.Location = new Point(638, 273);
             ViewAll.Name = "ViewAll";
             ViewAll.Size = new Size(75, 23);
             ViewAll.TabIndex = 6;
@@ -179,9 +179,9 @@
             // ThemKhachHang
             // 
             ThemKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ThemKhachHang.Location = new Point(180, 60);
+            ThemKhachHang.Location = new Point(130, 126);
             ThemKhachHang.Name = "ThemKhachHang";
-            ThemKhachHang.Size = new Size(129, 45);
+            ThemKhachHang.Size = new Size(150, 81);
             ThemKhachHang.TabIndex = 7;
             ThemKhachHang.Text = "Thêm khách hàng";
             ThemKhachHang.UseVisualStyleBackColor = true;
@@ -190,9 +190,9 @@
             // SuaKhachHang
             // 
             SuaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaKhachHang.Location = new Point(354, 60);
+            SuaKhachHang.Location = new Point(338, 126);
             SuaKhachHang.Name = "SuaKhachHang";
-            SuaKhachHang.Size = new Size(129, 45);
+            SuaKhachHang.Size = new Size(143, 81);
             SuaKhachHang.TabIndex = 8;
             SuaKhachHang.Text = "Sửa thông tin khách hàng";
             SuaKhachHang.UseVisualStyleBackColor = true;
@@ -201,9 +201,9 @@
             // XoaKhachHang
             // 
             XoaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            XoaKhachHang.Location = new Point(524, 60);
+            XoaKhachHang.Location = new Point(530, 126);
             XoaKhachHang.Name = "XoaKhachHang";
-            XoaKhachHang.Size = new Size(129, 45);
+            XoaKhachHang.Size = new Size(149, 81);
             XoaKhachHang.TabIndex = 9;
             XoaKhachHang.Text = "Xóa khách hàng";
             XoaKhachHang.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 609);
             Controls.Add(XoaKhachHang);
             Controls.Add(SuaKhachHang);
             Controls.Add(ThemKhachHang);

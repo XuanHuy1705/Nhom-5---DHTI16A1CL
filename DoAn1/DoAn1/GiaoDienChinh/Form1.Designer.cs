@@ -46,10 +46,12 @@
             button2 = new Button();
             menuTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
+            pictureBoxNen = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
             menuContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxNen).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -265,11 +267,24 @@
             sidebarTransition.Interval = 10;
             sidebarTransition.Tick += sidebarTransition_Tick;
             // 
+            // pictureBoxNen
+            // 
+            pictureBoxNen.Dock = DockStyle.Fill;
+            pictureBoxNen.Image = Properties.Resources.Đỏ_Vàng_Be_Cổ_điển_Chiếu_phim_Ngày_Quốc_khánh_Poster;
+            pictureBoxNen.Location = new Point(185, 41);
+            pictureBoxNen.Name = "pictureBoxNen";
+            pictureBoxNen.Size = new Size(755, 571);
+            pictureBoxNen.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxNen.TabIndex = 2;
+            pictureBoxNen.TabStop = false;
+            pictureBoxNen.Click += pictureBoxNen_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(940, 612);
+            Controls.Add(pictureBoxNen);
             Controls.Add(sidebar);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -281,6 +296,7 @@
             ((System.ComponentModel.ISupportInitialize)btnHam).EndInit();
             sidebar.ResumeLayout(false);
             menuContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxNen).EndInit();
             ResumeLayout(false);
         }
 
@@ -302,5 +318,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private PictureBox pictureBoxNen;
     }
 }

@@ -26,7 +26,7 @@
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pictureBoxNen.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -54,6 +54,7 @@
             {
                 DatPhong.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -75,6 +76,7 @@
             {
                 CapNhatThongTin.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void CapNhatThongTin_FormClosed(object? sender, FormClosedEventArgs e)
@@ -96,6 +98,7 @@
             {
                 ThanhToan.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void ThanhToan_FormClosed(object? sender, FormClosedEventArgs e)
@@ -193,6 +196,7 @@
             {
                 TraPhong.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void TraPhong_FormClosed(object sender, FormClosedEventArgs e)
@@ -214,6 +218,7 @@
             {
                 DichVuThem.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void DichVuThem_FormClosed(object? sender, FormClosedEventArgs e)
@@ -236,6 +241,7 @@
             {
                 DanhSachPhong.Activate();
             }
+            pictureBoxNen.Visible = false;
         }
 
         private void DanhSachPhong_FormClosed(object? sender, FormClosedEventArgs e)
@@ -256,7 +262,13 @@
                 var loginForm = new formDangNhap();
                 loginForm.Show();
                 this.Close();
-             }
+            }
+            pictureBoxNen.Visible = false;
+        }
+
+        private void pictureBoxNen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

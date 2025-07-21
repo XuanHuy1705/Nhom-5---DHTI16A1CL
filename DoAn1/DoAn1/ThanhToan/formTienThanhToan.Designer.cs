@@ -72,7 +72,7 @@
             // 
             // comboBoxPhuongThucThanhToan
             // 
-            comboBoxPhuongThucThanhToan.BackColor = SystemColors.MenuBar;
+            comboBoxPhuongThucThanhToan.BackColor = SystemColors.HighlightText;
             comboBoxPhuongThucThanhToan.FormattingEnabled = true;
             comboBoxPhuongThucThanhToan.Items.AddRange(new object[] { "Tiền Mặt", "Chuyển Khoản", "Thẻ Ngân Hàng" });
             comboBoxPhuongThucThanhToan.Location = new Point(204, 136);
@@ -142,11 +142,10 @@
             // 
             // txtGhiChu
             // 
-            txtGhiChu.BackColor = SystemColors.ButtonFace;
+            txtGhiChu.BackColor = SystemColors.ButtonHighlight;
             txtGhiChu.Location = new Point(204, 186);
             txtGhiChu.Multiline = true;
             txtGhiChu.Name = "txtGhiChu";
-            txtGhiChu.ReadOnly = true;
             txtGhiChu.Size = new Size(150, 66);
             txtGhiChu.TabIndex = 9;
             // 

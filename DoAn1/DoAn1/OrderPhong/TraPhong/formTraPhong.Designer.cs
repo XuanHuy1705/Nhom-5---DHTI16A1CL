@@ -48,7 +48,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(632, 153);
+            button1.Location = new Point(566, 265);
             button1.Name = "button1";
             button1.Size = new Size(126, 32);
             button1.TabIndex = 7;
@@ -59,10 +59,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(227, 9);
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(124, 208);
             label1.Name = "label1";
-            label1.Size = new Size(336, 25);
+            label1.Size = new Size(509, 40);
             label1.TabIndex = 6;
             label1.Text = "DANH SÁCH PHÒNG ĐÃ ĐƯỢC ĐẶT";
             // 
@@ -86,7 +86,7 @@
             BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaPhong, MaLoaiPhong, MaKhachHang, NgayNhan, NgayDuKienTra, GhiChu });
             BangKhachHang.Dock = DockStyle.Bottom;
             BangKhachHang.EnableHeadersVisualStyles = false;
-            BangKhachHang.Location = new Point(0, 196);
+            BangKhachHang.Location = new Point(0, 359);
             BangKhachHang.Name = "BangKhachHang";
             BangKhachHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             BangKhachHang.Size = new Size(800, 254);
@@ -132,7 +132,7 @@
             // TimKiemMaPhong
             // 
             TimKiemMaPhong.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TimKiemMaPhong.Location = new Point(305, 152);
+            TimKiemMaPhong.Location = new Point(319, 265);
             TimKiemMaPhong.Name = "TimKiemMaPhong";
             TimKiemMaPhong.Size = new Size(91, 32);
             TimKiemMaPhong.TabIndex = 8;
@@ -144,7 +144,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(31, 158);
+            label2.Location = new Point(45, 271);
             label2.Name = "label2";
             label2.Size = new Size(71, 17);
             label2.TabIndex = 9;
@@ -152,7 +152,7 @@
             // 
             // TimKiem
             // 
-            TimKiem.Location = new Point(110, 155);
+            TimKiem.Location = new Point(124, 268);
             TimKiem.Name = "TimKiem";
             TimKiem.Size = new Size(170, 23);
             TimKiem.TabIndex = 10;
@@ -160,9 +160,9 @@
             // TraPhong
             // 
             TraPhong.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TraPhong.Location = new Point(472, 152);
+            TraPhong.Location = new Point(304, 61);
             TraPhong.Name = "TraPhong";
-            TraPhong.Size = new Size(91, 32);
+            TraPhong.Size = new Size(209, 72);
             TraPhong.TabIndex = 11;
             TraPhong.Text = "Trả Phòng";
             TraPhong.UseVisualStyleBackColor = true;
@@ -172,7 +172,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 613);
             Controls.Add(TraPhong);
             Controls.Add(TimKiem);
             Controls.Add(label2);

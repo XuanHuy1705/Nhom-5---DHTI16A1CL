@@ -30,14 +30,14 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             BangKhachHang = new DataGridView();
-            DatPhongMoi = new Button();
-            label1 = new Label();
-            SuaThongTinDatPhong = new Button();
-            button1 = new Button();
             MaPhong = new DataGridViewTextBoxColumn();
             MaLoaiPhong = new DataGridViewTextBoxColumn();
             DonGia = new DataGridViewTextBoxColumn();
             TinhTrangPhong = new DataGridViewTextBoxColumn();
+            DatPhongMoi = new Button();
+            label1 = new Label();
+            SuaThongTinDatPhong = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -61,57 +61,13 @@
             BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaPhong, MaLoaiPhong, DonGia, TinhTrangPhong });
             BangKhachHang.Dock = DockStyle.Bottom;
             BangKhachHang.EnableHeadersVisualStyles = false;
-            BangKhachHang.Location = new Point(0, 196);
+            BangKhachHang.Location = new Point(0, 365);
             BangKhachHang.Name = "BangKhachHang";
             BangKhachHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             BangKhachHang.RowHeadersVisible = false;
             BangKhachHang.Size = new Size(800, 254);
             BangKhachHang.TabIndex = 0;
             BangKhachHang.CellContentClick += BangKhachHang_CellContentClick;
-            // 
-            // DatPhongMoi
-            // 
-            DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DatPhongMoi.Location = new Point(166, 45);
-            DatPhongMoi.Name = "DatPhongMoi";
-            DatPhongMoi.Size = new Size(176, 57);
-            DatPhongMoi.TabIndex = 1;
-            DatPhongMoi.Text = "Đặt phòng mới";
-            DatPhongMoi.UseVisualStyleBackColor = true;
-            DatPhongMoi.Click += DatPhongMoi_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(297, 151);
-            label1.Name = "label1";
-            label1.Size = new Size(200, 25);
-            label1.TabIndex = 2;
-            label1.Text = "DANH SÁCH PHÒNG";
-            label1.Click += label1_Click;
-            // 
-            // SuaThongTinDatPhong
-            // 
-            SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaThongTinDatPhong.Location = new Point(480, 45);
-            SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
-            SuaThongTinDatPhong.Size = new Size(178, 57);
-            SuaThongTinDatPhong.TabIndex = 3;
-            SuaThongTinDatPhong.Text = "Sửa thông tin phòng";
-            SuaThongTinDatPhong.UseVisualStyleBackColor = true;
-            SuaThongTinDatPhong.Click += SuaThongTinDatPhong_Click;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(599, 146);
-            button1.Name = "button1";
-            button1.Size = new Size(138, 38);
-            button1.TabIndex = 4;
-            button1.Text = "Làm mới dữ liệu";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // MaPhong
             // 
@@ -138,11 +94,56 @@
             TinhTrangPhong.HeaderText = "Tình Trạng Phòng";
             TinhTrangPhong.Name = "TinhTrangPhong";
             // 
+            // DatPhongMoi
+            // 
+            DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DatPhongMoi.Location = new Point(175, 85);
+            DatPhongMoi.Name = "DatPhongMoi";
+            DatPhongMoi.Size = new Size(201, 96);
+            DatPhongMoi.TabIndex = 1;
+            DatPhongMoi.Text = "Đặt phòng mới";
+            DatPhongMoi.UseVisualStyleBackColor = true;
+            DatPhongMoi.Click += DatPhongMoi_Click;
+            // 
+            // label1
+            // 
+            label1.AllowDrop = true;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(267, 265);
+            label1.Name = "label1";
+            label1.Size = new Size(250, 32);
+            label1.TabIndex = 2;
+            label1.Text = "DANH SÁCH PHÒNG";
+            label1.Click += label1_Click;
+            // 
+            // SuaThongTinDatPhong
+            // 
+            SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SuaThongTinDatPhong.Location = new Point(490, 85);
+            SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
+            SuaThongTinDatPhong.Size = new Size(201, 96);
+            SuaThongTinDatPhong.TabIndex = 3;
+            SuaThongTinDatPhong.Text = "Sửa thông tin phòng";
+            SuaThongTinDatPhong.UseVisualStyleBackColor = true;
+            SuaThongTinDatPhong.Click += SuaThongTinDatPhong_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(576, 259);
+            button1.Name = "button1";
+            button1.Size = new Size(143, 38);
+            button1.TabIndex = 4;
+            button1.Text = "Làm mới dữ liệu";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // formDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 619);
             Controls.Add(button1);
             Controls.Add(SuaThongTinDatPhong);
             Controls.Add(label1);
