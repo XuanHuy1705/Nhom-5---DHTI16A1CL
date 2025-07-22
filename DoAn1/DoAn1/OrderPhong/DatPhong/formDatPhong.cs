@@ -88,5 +88,11 @@ namespace DoAn1
         {
             ExportDataToGrid();
         }
+
+        private void ThemDanhSach_Click(object sender, EventArgs e)
+        {
+            var danhSachForm = new DoAn1.OrderPhong.DatPhong.formDanhSachPhongDangThue();
+            danhSachForm.ShowDialog();
+        }
     }
 }

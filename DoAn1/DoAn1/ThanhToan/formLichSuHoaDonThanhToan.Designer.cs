@@ -43,6 +43,7 @@
             TimMaHoaDon = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            XuatDuLieu = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -155,7 +156,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(475, 145);
+            button2.Location = new Point(459, 145);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 5;
@@ -163,11 +164,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // XuatDuLieu
+            // 
+            XuatDuLieu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            XuatDuLieu.Location = new Point(548, 146);
+            XuatDuLieu.Name = "XuatDuLieu";
+            XuatDuLieu.Size = new Size(91, 23);
+            XuatDuLieu.TabIndex = 6;
+            XuatDuLieu.Text = "Xuất Dữ Liệu";
+            XuatDuLieu.UseVisualStyleBackColor = true;
+            XuatDuLieu.Click += XuatDuLieu_Click;
+            // 
             // formLichSuHoaDonThanhToan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(651, 458);
+            Controls.Add(XuatDuLieu);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(TimMaHoaDon);
@@ -196,5 +209,6 @@
         private TextBox TimMaHoaDon;
         private Button button1;
         private Button button2;
+        private Button XuatDuLieu;
     }
 }

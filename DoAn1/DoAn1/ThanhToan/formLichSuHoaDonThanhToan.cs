@@ -1,13 +1,16 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClosedXML.Excel;
 
 namespace DoAn1.ThanhToan
 {
@@ -19,6 +22,7 @@ namespace DoAn1.ThanhToan
         {
             InitializeComponent();
         }
+
         private void LoadData(string maHoaDon = "")
         {
             dataGridView1.Rows.Clear();
@@ -45,13 +49,14 @@ namespace DoAn1.ThanhToan
                         row["MaHoaDon"],
                         row["MaPhong"],
                         row["TongTien"],
-                        Convert.ToDateTime(row["NgayThanhToan"]).ToString("dd/MM/yyyy"), // chỉ ngày/tháng/năm
+                        Convert.ToDateTime(row["NgayThanhToan"]).ToString("dd/MM/yyyy"),
                         row["PhuongThucThanhToan"],
                         row["GhiChu"]
                     );
                 }
             }
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string maHoaDon = TimMaHoaDon.Text.Trim();
@@ -65,7 +70,50 @@ namespace DoAn1.ThanhToan
 
         private void formLichSuHoaDonThanhToan_Load(object sender, EventArgs e)
         {
-                        LoadData();
+            LoadData();
+        }
+
+        private void XuatDuLieu_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu để xuất.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "Excel Workbook|*.xlsx";
+                sfd.Title = "Chọn vị trí lưu file Excel";
+                sfd.FileName = "Lịch Sử Hóa Đơn.xlsx";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    using (var workbook = new XLWorkbook())
+                    {
+                        var worksheet = workbook.Worksheets.Add("Lịch sử hóa đơn");
+
+                        // Export column headers
+                        for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                        {
+                            worksheet.Cell(1, i + 1).Value = dataGridView1.Columns[i].HeaderText;
+                        }
+
+                        // Export rows
+                        for (int r = 0; r < dataGridView1.Rows.Count; r++)
+                        {
+                            for (int c = 0; c < dataGridView1.Columns.Count; c++)
+                            {
+                                worksheet.Cell(r + 2, c + 1).Value = dataGridView1.Rows[r].Cells[c].Value?.ToString();
+                            }
+                        }
+
+                        worksheet.Columns().AdjustToContents();
+                        workbook.SaveAs(sfd.FileName);
+                    }
+
+                    MessageBox.Show("Xuất dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClosedXML.Excel;
 
 namespace DoAn1
 {
@@ -140,6 +141,84 @@ namespace DoAn1
             formThongTinCanSua thongTinForm = new formThongTinCanSua();
             thongTinForm.FormClosed += (s, args) => { LoadAllData(); };
             thongTinForm.ShowDialog();
+        }
+
+        private void ThemFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Excel Files|*.xlsx;*.xls|CSV Files|*.csv";
+                ofd.Title = "Chọn file dữ liệu khách hàng";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    var filePath = ofd.FileName;
+                    var ext = System.IO.Path.GetExtension(filePath).ToLower();
+                    var customers = new List<(string, string, string, string, string, string, string)>();
+
+                    if (ext == ".xlsx" || ext == ".xls")
+                    {
+                        using (var workbook = new XLWorkbook(filePath))
+                        {
+                            var ws = workbook.Worksheets.First();
+                            // Assuming first row is header, data starts from row 2
+                            for (int r = 2; r <= ws.LastRowUsed().RowNumber(); r++)
+                            {
+                                var row = ws.Row(r);
+                                customers.Add((
+                                    row.Cell(1).GetString(), // MaKhachHang
+                                    row.Cell(2).GetString(), // TenKhachHang
+                                    row.Cell(3).GetString(), // CMND
+                                    row.Cell(4).GetString(), // GioiTinh
+                                    row.Cell(5).GetString(), // DiaChi
+                                    row.Cell(6).GetString(), // DienThoai
+                                    row.Cell(7).GetString()  // QuocTich
+                                ));
+                            }
+                        }
+                    }
+                    else if (ext == ".csv")
+                    {
+                        var lines = File.ReadAllLines(filePath);
+                        for (int i = 1; i < lines.Length; i++) // skip header
+                        {
+                            var cols = lines[i].Split(',');
+                            if (cols.Length >= 7)
+                            {
+                                customers.Add((
+                                    cols[0], cols[1], cols[2], cols[3], cols[4], cols[5], cols[6]
+                                ));
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Định dạng file không hỗ trợ.");
+                        return;
+                    }
+
+                    using (SqlConnection con = new SqlConnection(connectionString))
+                    {
+                        con.Open();
+                        foreach (var c in customers)
+                        {
+                            var cmd = new SqlCommand(
+                                "INSERT INTO KHACH_HANG (MaKhachHang, TenKhachHang, CMND, GioiTinh, DiaChi, DienThoai, QuocTich) " +
+                                "VALUES (@MaKhachHang, @TenKhachHang, @CMND, @GioiTinh, @DiaChi, @DienThoai, @QuocTich)", con);
+                            cmd.Parameters.AddWithValue("@MaKhachHang", c.Item1);
+                            cmd.Parameters.AddWithValue("@TenKhachHang", c.Item2);
+                            cmd.Parameters.AddWithValue("@CMND", c.Item3);
+                            cmd.Parameters.AddWithValue("@GioiTinh", c.Item4);
+                            cmd.Parameters.AddWithValue("@DiaChi", c.Item5);
+                            cmd.Parameters.AddWithValue("@DienThoai", c.Item6);
+                            cmd.Parameters.AddWithValue("@QuocTich", c.Item7);
+                            try { cmd.ExecuteNonQuery(); } catch { /* handle duplicates or errors if needed */ }
+                        }
+                    }
+
+                    LoadAllData();
+                    MessageBox.Show("Thêm dữ liệu từ file thành công!");
+                }
+            }
         }
     }
 }

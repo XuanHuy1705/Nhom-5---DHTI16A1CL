@@ -38,6 +38,7 @@
             label1 = new Label();
             SuaThongTinDatPhong = new Button();
             button1 = new Button();
+            ThemDanhSach = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             // DatPhongMoi
             // 
             DatPhongMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DatPhongMoi.Location = new Point(175, 85);
+            DatPhongMoi.Location = new Point(69, 85);
             DatPhongMoi.Name = "DatPhongMoi";
             DatPhongMoi.Size = new Size(201, 96);
             DatPhongMoi.TabIndex = 1;
@@ -120,7 +121,7 @@
             // SuaThongTinDatPhong
             // 
             SuaThongTinDatPhong.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaThongTinDatPhong.Location = new Point(490, 85);
+            SuaThongTinDatPhong.Location = new Point(576, 85);
             SuaThongTinDatPhong.Name = "SuaThongTinDatPhong";
             SuaThongTinDatPhong.Size = new Size(201, 96);
             SuaThongTinDatPhong.TabIndex = 3;
@@ -139,11 +140,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // ThemDanhSach
+            // 
+            ThemDanhSach.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ThemDanhSach.Location = new Point(326, 85);
+            ThemDanhSach.Name = "ThemDanhSach";
+            ThemDanhSach.Size = new Size(201, 96);
+            ThemDanhSach.TabIndex = 5;
+            ThemDanhSach.Text = "Thêm danh sách đặt phòng";
+            ThemDanhSach.UseVisualStyleBackColor = true;
+            ThemDanhSach.Click += ThemDanhSach_Click;
+            // 
             // formDatPhong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 619);
+            Controls.Add(ThemDanhSach);
             Controls.Add(button1);
             Controls.Add(SuaThongTinDatPhong);
             Controls.Add(label1);
@@ -169,5 +182,6 @@
         private DataGridViewTextBoxColumn MaLoaiPhong;
         private DataGridViewTextBoxColumn DonGia;
         private DataGridViewTextBoxColumn TinhTrangPhong;
+        private Button ThemDanhSach;
     }
 }

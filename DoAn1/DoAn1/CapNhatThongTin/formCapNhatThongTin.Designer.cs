@@ -46,6 +46,7 @@
             ThemKhachHang = new Button();
             SuaKhachHang = new Button();
             XoaKhachHang = new Button();
+            ThemFile = new Button();
             ((System.ComponentModel.ISupportInitialize)BangKhachHang).BeginInit();
             SuspendLayout();
             // 
@@ -179,7 +180,7 @@
             // ThemKhachHang
             // 
             ThemKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ThemKhachHang.Location = new Point(130, 126);
+            ThemKhachHang.Location = new Point(89, 126);
             ThemKhachHang.Name = "ThemKhachHang";
             ThemKhachHang.Size = new Size(150, 81);
             ThemKhachHang.TabIndex = 7;
@@ -190,7 +191,7 @@
             // SuaKhachHang
             // 
             SuaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaKhachHang.Location = new Point(338, 126);
+            SuaKhachHang.Location = new Point(457, 126);
             SuaKhachHang.Name = "SuaKhachHang";
             SuaKhachHang.Size = new Size(143, 81);
             SuaKhachHang.TabIndex = 8;
@@ -201,7 +202,7 @@
             // XoaKhachHang
             // 
             XoaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            XoaKhachHang.Location = new Point(530, 126);
+            XoaKhachHang.Location = new Point(634, 126);
             XoaKhachHang.Name = "XoaKhachHang";
             XoaKhachHang.Size = new Size(149, 81);
             XoaKhachHang.TabIndex = 9;
@@ -209,11 +210,23 @@
             XoaKhachHang.UseVisualStyleBackColor = true;
             XoaKhachHang.Click += XoaKhachHang_Click;
             // 
+            // ThemFile
+            // 
+            ThemFile.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ThemFile.Location = new Point(275, 126);
+            ThemFile.Name = "ThemFile";
+            ThemFile.Size = new Size(143, 81);
+            ThemFile.TabIndex = 10;
+            ThemFile.Text = "Thêm Thông Tin Từ Bên Ngoài";
+            ThemFile.UseVisualStyleBackColor = true;
+            ThemFile.Click += ThemFile_Click;
+            // 
             // formCapNhatThongTin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 609);
+            Controls.Add(ThemFile);
             Controls.Add(XoaKhachHang);
             Controls.Add(SuaKhachHang);
             Controls.Add(ThemKhachHang);
@@ -252,5 +265,6 @@
         private Button ThemKhachHang;
         private Button SuaKhachHang;
         private Button XoaKhachHang;
+        private Button ThemFile;
     }
 }

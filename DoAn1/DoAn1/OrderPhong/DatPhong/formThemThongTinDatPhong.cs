@@ -103,6 +103,19 @@ namespace DoAn1.OrderPhong
                 try
                 {
                     con.Open();
+
+                    // Check if MaKhachHang exists
+                    string checkQuery = "SELECT COUNT(*) FROM KHACH_HANG WHERE MaKhachHang = @MaKhachHang";
+                    SqlCommand checkCmd = new SqlCommand(checkQuery, con);
+                    checkCmd.Parameters.AddWithValue("@MaKhachHang", maKhachHang);
+                    int exists = (int)checkCmd.ExecuteScalar();
+
+                    if (exists == 0)
+                    {
+                        MessageBox.Show("Bạn cần thêm thông tin cho mã khách hàng để đặt phòng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
                     string insertQuery = @"INSERT INTO DANH_SACH_PHONG_DA_CHO_THUE 
                 (MaPhong, MaLoaiPhong, MaKhachHang, NgayNhan, NgayDuKienTra, GhiChu)
                 VALUES (@MaPhong, @MaLoaiPhong, @MaKhachHang, @NgayNhan, @NgayDuKienTra, @GhiChu)";

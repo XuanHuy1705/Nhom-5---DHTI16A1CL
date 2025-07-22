@@ -50,13 +50,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows7.0",
           "dependencies": {
-            "ReaLTaiizor": {
+            "ClosedXML": {
               "target": "Package",
-              "version": "[3.8.1.3, )"
-            },
-            "Siticone.NetCore.UI": {
-              "target": "Package",
-              "version": "[2025.6.23, )"
+              "version": "[0.105.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
