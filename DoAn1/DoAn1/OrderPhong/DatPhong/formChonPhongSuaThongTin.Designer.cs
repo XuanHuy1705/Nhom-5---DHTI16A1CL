@@ -83,7 +83,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "formChonPhongSuaThongTin";
-            Text = "formChonPhongSuaThongTin";
+            Text = "Chọn Phòng Sửa Thông Tin";
             ResumeLayout(false);
             PerformLayout();
         }

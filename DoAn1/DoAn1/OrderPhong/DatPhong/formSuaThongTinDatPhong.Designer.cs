@@ -203,7 +203,7 @@
             Controls.Add(MaLoaiPhong);
             Controls.Add(label1);
             Name = "formSuaThongTinDatPhong";
-            Text = "formSuaThongTinDatPhong";
+            Text = "Sửa Thông Tin Đặt Phòng";
             ResumeLayout(false);
             PerformLayout();
         }

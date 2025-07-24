@@ -143,11 +143,11 @@
             // ThemDanhSach
             // 
             ThemDanhSach.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ThemDanhSach.Location = new Point(326, 85);
+            ThemDanhSach.Location = new Point(301, 85);
             ThemDanhSach.Name = "ThemDanhSach";
-            ThemDanhSach.Size = new Size(201, 96);
+            ThemDanhSach.Size = new Size(247, 96);
             ThemDanhSach.TabIndex = 5;
-            ThemDanhSach.Text = "Thêm danh sách đặt phòng";
+            ThemDanhSach.Text = "Quản lý danh sách đặt phòng";
             ThemDanhSach.UseVisualStyleBackColor = true;
             ThemDanhSach.Click += ThemDanhSach_Click;
             // 
