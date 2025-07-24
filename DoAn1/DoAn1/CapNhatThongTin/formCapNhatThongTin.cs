@@ -131,9 +131,56 @@ namespace DoAn1
 
         private void XoaKhachHang_Click(object sender, EventArgs e)
         {
-            formXoaThongTin xoaForm = new formXoaThongTin();
-            xoaForm.FormClosed += (s, args) => { LoadAllData(); };
-            xoaForm.ShowDialog();
+            if(BangKhachHang.SelectedRows.Count == 0)
+    {
+                MessageBox.Show("Vui lòng chọn một khách hàng để xóa.");
+                return;
+            }
+
+            var selectedRow = BangKhachHang.SelectedRows[0];
+            var maKhachHang = selectedRow.Cells[0].Value?.ToString();
+
+            if (string.IsNullOrEmpty(maKhachHang))
+            {
+                MessageBox.Show("Không thể xác định khách hàng cần xóa.");
+                return;
+            }
+
+            var confirm = MessageBox.Show("Bạn có chắc muốn xóa khách hàng này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm != DialogResult.Yes)
+                return;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    var cmd = new SqlCommand("DELETE FROM KHACH_HANG WHERE MaKhachHang = @MaKhachHang", con);
+                    cmd.Parameters.AddWithValue("@MaKhachHang", maKhachHang);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Xóa khách hàng thành công!");
+                        LoadAllData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy khách hàng để xóa.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    if (ex.Message.Contains("REFERENCE constraint") && ex.Message.Contains("conflicted"))
+                    {
+                        MessageBox.Show("Không thể xóa khách hàng này vì đang có dữ liệu liên quan (ví dụ: khách hàng đã thuê phòng). Vui lòng kiểm tra lại!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi khi xóa khách hàng: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void SuaKhachHang_Click(object sender, EventArgs e)

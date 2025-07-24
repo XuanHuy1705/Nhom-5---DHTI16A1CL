@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             BangKhachHang = new DataGridView();
             MaKhachHang = new DataGridViewTextBoxColumn();
@@ -68,14 +68,14 @@
             BangKhachHang.AllowUserToResizeRows = false;
             BangKhachHang.BackgroundColor = SystemColors.ButtonHighlight;
             BangKhachHang.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            BangKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            BangKhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             BangKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BangKhachHang.Columns.AddRange(new DataGridViewColumn[] { MaKhachHang, TenKhachHang, CMND, GioiTinh, DiaChi, DienThoai, QuocTich });
             BangKhachHang.Dock = DockStyle.Bottom;
@@ -169,18 +169,18 @@
             // ViewAll
             // 
             ViewAll.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ViewAll.Location = new Point(638, 273);
+            ViewAll.Location = new Point(719, 313);
             ViewAll.Name = "ViewAll";
             ViewAll.Size = new Size(75, 23);
             ViewAll.TabIndex = 6;
-            ViewAll.Text = "Tất cả";
+            ViewAll.Text = "Làm mới";
             ViewAll.UseVisualStyleBackColor = true;
             ViewAll.Click += ViewAll_Click;
             // 
             // ThemKhachHang
             // 
             ThemKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ThemKhachHang.Location = new Point(89, 126);
+            ThemKhachHang.Location = new Point(161, 124);
             ThemKhachHang.Name = "ThemKhachHang";
             ThemKhachHang.Size = new Size(150, 81);
             ThemKhachHang.TabIndex = 7;
@@ -191,7 +191,7 @@
             // SuaKhachHang
             // 
             SuaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SuaKhachHang.Location = new Point(457, 126);
+            SuaKhachHang.Location = new Point(529, 124);
             SuaKhachHang.Name = "SuaKhachHang";
             SuaKhachHang.Size = new Size(143, 81);
             SuaKhachHang.TabIndex = 8;
@@ -201,10 +201,10 @@
             // 
             // XoaKhachHang
             // 
-            XoaKhachHang.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            XoaKhachHang.Location = new Point(634, 126);
+            XoaKhachHang.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            XoaKhachHang.Location = new Point(662, 284);
             XoaKhachHang.Name = "XoaKhachHang";
-            XoaKhachHang.Size = new Size(149, 81);
+            XoaKhachHang.Size = new Size(117, 23);
             XoaKhachHang.TabIndex = 9;
             XoaKhachHang.Text = "Xóa khách hàng";
             XoaKhachHang.UseVisualStyleBackColor = true;
@@ -213,11 +213,11 @@
             // ThemFile
             // 
             ThemFile.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ThemFile.Location = new Point(275, 126);
+            ThemFile.Location = new Point(347, 124);
             ThemFile.Name = "ThemFile";
-            ThemFile.Size = new Size(143, 81);
+            ThemFile.Size = new Size(154, 81);
             ThemFile.TabIndex = 10;
-            ThemFile.Text = "Thêm Thông Tin Từ Bên Ngoài";
+            ThemFile.Text = "Thêm Thông Tin Từ Danh Sách Bên Ngoài";
             ThemFile.UseVisualStyleBackColor = true;
             ThemFile.Click += ThemFile_Click;
             // 

@@ -32,7 +32,6 @@ D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.genrunt
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\ref\DoAn1.dll
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formDangNhap.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formNhapThongTin.resources
-D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formXoaThongTin.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formSuaThongTin.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formThongTinCanSua.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.ThongTinDichVuDaDung.resources

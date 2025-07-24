@@ -67,9 +67,6 @@
     <Compile Update="OrderPhong\TraPhong\formTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CapNhatThongTin\formXoaThongTin.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="OrderPhong\TraPhong\formXacNhanTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>

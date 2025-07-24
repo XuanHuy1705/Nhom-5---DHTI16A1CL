@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DichVuDaDat = new DataGridView();
             MaPhong = new DataGridViewTextBoxColumn();
             DichVuDaDung = new DataGridViewTextBoxColumn();
@@ -42,6 +43,14 @@
             DichVuDaDat.AllowUserToDeleteRows = false;
             DichVuDaDat.AllowUserToResizeColumns = false;
             DichVuDaDat.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            DichVuDaDat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DichVuDaDat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DichVuDaDat.Columns.AddRange(new DataGridViewColumn[] { MaPhong, DichVuDaDung, TongTienDichVu });
             DichVuDaDat.Dock = DockStyle.Bottom;

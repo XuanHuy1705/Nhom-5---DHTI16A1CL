@@ -55,7 +55,7 @@
             BangLoaiPhong.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
@@ -64,10 +64,10 @@
             BangLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             BangLoaiPhong.Columns.AddRange(new DataGridViewColumn[] { MaLoaiPhong, TenLoaiPhong, DonGia, SoNguoiChuan, SoNguoiToiDa });
             BangLoaiPhong.Dock = DockStyle.Bottom;
-            BangLoaiPhong.Location = new Point(0, 78);
+            BangLoaiPhong.Location = new Point(0, 84);
             BangLoaiPhong.Name = "BangLoaiPhong";
             BangLoaiPhong.RowHeadersVisible = false;
-            BangLoaiPhong.Size = new Size(562, 351);
+            BangLoaiPhong.Size = new Size(535, 257);
             BangLoaiPhong.TabIndex = 1;
             BangLoaiPhong.CellContentClick += BangLoaiPhong_CellContentClick;
             // 
@@ -94,6 +94,7 @@
             // 
             // SoNguoiToiDa
             // 
+            SoNguoiToiDa.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             SoNguoiToiDa.HeaderText = "Số Người Tối Đa";
             SoNguoiToiDa.Name = "SoNguoiToiDa";
             // 
@@ -101,7 +102,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(562, 429);
+            ClientSize = new Size(535, 341);
             Controls.Add(BangLoaiPhong);
             Controls.Add(label1);
             Name = "formDanhSachLoaiPhong";

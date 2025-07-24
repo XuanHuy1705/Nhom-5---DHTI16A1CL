@@ -17,8 +17,6 @@ namespace DoAn1.DanhSachPhong
         public formDanhSachLoaiPhong()
         {
             InitializeComponent();
-            label1.Dock = DockStyle.Top;
-            label1.TextAlign = ContentAlignment.MiddleCenter;
         }
 
         private void LoadLoaiPhongToGrid()

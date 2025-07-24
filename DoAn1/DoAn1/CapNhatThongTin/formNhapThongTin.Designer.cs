@@ -201,7 +201,7 @@
             Controls.Add(CMND);
             Controls.Add(TenKhachHang);
             Name = "formNhapThongTin";
-            Text = "Nhập thông tin người dùng";
+            Text = "Thêm khách hàng mới";
             ResumeLayout(false);
             PerformLayout();
         }

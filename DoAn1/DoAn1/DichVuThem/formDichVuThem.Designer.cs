@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             bangDichVu = new DataGridView();
             MaDichVu = new DataGridViewTextBoxColumn();
             TenDichVu = new DataGridViewTextBoxColumn();
@@ -51,6 +52,14 @@
             bangDichVu.AllowUserToDeleteRows = false;
             bangDichVu.AllowUserToResizeColumns = false;
             bangDichVu.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            bangDichVu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             bangDichVu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             bangDichVu.Columns.AddRange(new DataGridViewColumn[] { MaDichVu, TenDichVu, DonVi, DonGia });
             bangDichVu.Dock = DockStyle.Left;

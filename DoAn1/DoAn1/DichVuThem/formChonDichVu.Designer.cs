@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DanhSachDichVu = new ComboBox();
             SoLuongChon = new TextBox();
             DichVuDaChon = new DataGridView();
@@ -62,6 +63,14 @@
             DichVuDaChon.AllowUserToResizeColumns = false;
             DichVuDaChon.AllowUserToResizeRows = false;
             DichVuDaChon.BackgroundColor = SystemColors.ButtonFace;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            DichVuDaChon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DichVuDaChon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DichVuDaChon.Columns.AddRange(new DataGridViewColumn[] { DichVu, SoLuong });
             DichVuDaChon.Dock = DockStyle.Right;
