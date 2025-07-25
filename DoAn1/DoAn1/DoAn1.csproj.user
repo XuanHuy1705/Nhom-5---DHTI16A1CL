@@ -55,9 +55,6 @@
     <Compile Update="ThanhToan\formThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CapNhatThongTin\formThongTinCanSua.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="OrderPhong\DatPhong\formSuaThongTinDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,9 +62,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="OrderPhong\TraPhong\formTraPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="OrderPhong\TraPhong\formXacNhanTraPhong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThanhToan\formTienThanhToan.cs">

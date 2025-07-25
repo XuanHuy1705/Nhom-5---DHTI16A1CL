@@ -33,7 +33,6 @@ D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\ref\DoAn1.dll
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formDangNhap.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formNhapThongTin.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formSuaThongTin.resources
-D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formThongTinCanSua.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.ThongTinDichVuDaDung.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.formThemThongTinDatPhong.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.formChonPhongSuaThongTin.resources
@@ -41,7 +40,6 @@ D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPh
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.formChonDichVu.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DichVuThem.formChonPhong.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.DanhSachPhong.formDanhSachLoaiPhong.resources
-D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.OrderPhong.SuaPhong.formXacNhanTraPhong.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.formChonThanhToan.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.ThanhToan.formTienThanhToan.resources
 D:\Git\Nhom-5---DHTI16A1CL\DoAn1\DoAn1\obj\Debug\net8.0-windows7.0\DoAn1.ThanhToan.formLichSuHoaDonThanhToan.resources

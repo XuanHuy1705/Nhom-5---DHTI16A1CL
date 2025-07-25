@@ -103,6 +103,7 @@
             sidebar.Name = "sidebar";
             sidebar.Size = new Size(185, 571);
             sidebar.TabIndex = 1;
+            sidebar.Paint += sidebar_Paint;
             // 
             // menuContainer
             // 
@@ -175,7 +176,7 @@
             button1.Name = "button1";
             button1.Size = new Size(182, 53);
             button1.TabIndex = 0;
-            button1.Text = "    Cập nhật thông tin ";
+            button1.Text = "   Thông Tin Khách Hàng";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
             // 

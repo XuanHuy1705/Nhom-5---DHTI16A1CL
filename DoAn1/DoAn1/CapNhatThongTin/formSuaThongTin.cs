@@ -16,6 +16,29 @@ namespace DoAn1
         public string OriginalMaKhachHang { get; set; }
         string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLKhachSan;Integrated Security=True";
 
+        // Thêm constructor nhận thông tin khách hàng
+        public formSuaThongTin(
+            string maKhachHang,
+            string tenKhachHang,
+            string cmnd,
+            string gioiTinh,
+            string diaChi,
+            string dienThoai,
+            string quocTich)
+        {
+            InitializeComponent();
+            // Gán dữ liệu lên các control
+            MaKhachHang.Text = maKhachHang;
+            TenKhachHang.Text = tenKhachHang;
+            CMND.Text = cmnd;
+            GioiTinh.SelectedItem = gioiTinh;
+            DiaChi.Text = diaChi;
+            DienThoai.Text = dienThoai;
+            QuocTich.Text = quocTich;
+            OriginalMaKhachHang = maKhachHang;
+        }
+
+        // Giữ lại constructor mặc định nếu cần thiết
         public formSuaThongTin()
         {
             InitializeComponent();
@@ -29,12 +52,12 @@ namespace DoAn1
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(MaKhachHang.Text) ||
-            string.IsNullOrWhiteSpace(TenKhachHang.Text) ||
-            string.IsNullOrWhiteSpace(CMND.Text) ||
-            GioiTinh.SelectedItem == null ||
-            string.IsNullOrWhiteSpace(DiaChi.Text) ||
-            string.IsNullOrWhiteSpace(DienThoai.Text) ||
-            string.IsNullOrWhiteSpace(QuocTich.Text))
+                string.IsNullOrWhiteSpace(TenKhachHang.Text) ||
+                string.IsNullOrWhiteSpace(CMND.Text) ||
+                GioiTinh.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(DiaChi.Text) ||
+                string.IsNullOrWhiteSpace(DienThoai.Text) ||
+                string.IsNullOrWhiteSpace(QuocTich.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\traphong\\formtraphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\traphong\\formtraphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\dichvuthem\\formchondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\orderphong\\datphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|solutionrelative:doan1\\orderphong\\datphong\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2547A88B-593D-4CA6-91CE-090E530EDB38}|DoAn1\\DoAn1.csproj|d:\\git\\nhom-5---dhti16a1cl\\doan1\\doan1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,26 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "formChonDichVu.cs",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "RelativeToolTip": "DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAAwKIAAAABAAAAAAAAAA==",
+              "Title": "formTraPhong.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\TraPhong\\formTraPhong.cs",
+              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\TraPhong\\formTraPhong.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\TraPhong\\formTraPhong.cs [Design]*",
+              "RelativeToolTip": "DoAn1\\OrderPhong\\TraPhong\\formTraPhong.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T02:03:15.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T11:00:49.639Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "formChonDichVu.cs [Design]",
-              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "RelativeDocumentMoniker": "DoAn1\\DichVuThem\\formChonDichVu.cs",
-              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\DichVuThem\\formChonDichVu.cs [Design]",
-              "RelativeToolTip": "DoAn1\\DichVuThem\\formChonDichVu.cs [Design]",
+              "Title": "formDatPhong.cs [Design]",
+              "DocumentMoniker": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\DatPhong\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "DoAn1\\OrderPhong\\DatPhong\\formDatPhong.cs",
+              "ToolTip": "D:\\Git\\Nhom-5---DHTI16A1CL\\DoAn1\\DoAn1\\OrderPhong\\DatPhong\\formDatPhong.cs [Design]",
+              "RelativeToolTip": "DoAn1\\OrderPhong\\DatPhong\\formDatPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T02:03:12.985Z",
+              "WhenOpened": "2025-07-25T11:00:33.221Z",
               "EditorCaption": " [Design]"
             },
             {

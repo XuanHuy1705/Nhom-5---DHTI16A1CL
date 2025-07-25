@@ -27,6 +27,7 @@
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            sidebar.Dock = DockStyle.Left;
             pictureBoxNen.Visible = true;
         }
 
@@ -273,6 +274,11 @@
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
         {
 
         }

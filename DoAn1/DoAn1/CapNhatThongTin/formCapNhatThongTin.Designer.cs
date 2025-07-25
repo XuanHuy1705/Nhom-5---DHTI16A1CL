@@ -38,7 +38,6 @@
             DiaChi = new DataGridViewTextBoxColumn();
             DienThoai = new DataGridViewTextBoxColumn();
             QuocTich = new DataGridViewTextBoxColumn();
-            LoaiTimKiem = new ComboBox();
             TimKiem = new TextBox();
             label2 = new Label();
             Check = new Button();
@@ -128,27 +127,19 @@
             QuocTich.HeaderText = "Quốc Tịch";
             QuocTich.Name = "QuocTich";
             // 
-            // LoaiTimKiem
-            // 
-            LoaiTimKiem.FormattingEnabled = true;
-            LoaiTimKiem.Items.AddRange(new object[] { "MaKhachHang", "TenKhachHang", "CMND", "GioiTinh", "DiaChi", "DienThoai", "QuocTich" });
-            LoaiTimKiem.Location = new Point(171, 312);
-            LoaiTimKiem.Name = "LoaiTimKiem";
-            LoaiTimKiem.Size = new Size(177, 23);
-            LoaiTimKiem.TabIndex = 2;
-            // 
             // TimKiem
             // 
             TimKiem.Location = new Point(367, 312);
             TimKiem.Name = "TimKiem";
             TimKiem.Size = new Size(242, 23);
             TimKiem.TabIndex = 3;
+            TimKiem.TextChanged += TimKiem_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(78, 314);
+            label2.Location = new Point(282, 313);
             label2.Name = "label2";
             label2.Size = new Size(74, 20);
             label2.TabIndex = 4;
@@ -234,7 +225,6 @@
             Controls.Add(Check);
             Controls.Add(label2);
             Controls.Add(TimKiem);
-            Controls.Add(LoaiTimKiem);
             Controls.Add(BangKhachHang);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
@@ -257,7 +247,6 @@
         private DataGridViewTextBoxColumn DiaChi;
         private DataGridViewTextBoxColumn DienThoai;
         private DataGridViewTextBoxColumn QuocTich;
-        private ComboBox LoaiTimKiem;
         private TextBox TimKiem;
         private Label label2;
         private Button Check;

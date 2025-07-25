@@ -66,23 +66,31 @@ namespace DoAn1
 
         private void Check_Click(object sender, EventArgs e)
         {
-            string column = LoaiTimKiem.SelectedItem?.ToString();
             string value = TimKiem.Text.Trim();
 
-            if (string.IsNullOrEmpty(column) || string.IsNullOrEmpty(value))
+            BangKhachHang.Rows.Clear();
+
+            if (string.IsNullOrEmpty(value))
             {
-                MessageBox.Show("Vui lòng chọn loại tìm kiếm và nhập dữ liệu.");
+                LoadAllData();
                 return;
             }
-
-            BangKhachHang.Rows.Clear();
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 try
                 {
                     con.Open();
-                    string query = $"SELECT * FROM KHACH_HANG WHERE [{column}] LIKE @value";
+                    string query = @"
+                SELECT * FROM KHACH_HANG
+                WHERE 
+                    MaKhachHang LIKE @value OR
+                    TenKhachHang LIKE @value OR
+                    CMND LIKE @value OR
+                    GioiTinh LIKE @value OR
+                    DiaChi LIKE @value OR
+                    DienThoai LIKE @value OR
+                    QuocTich LIKE @value";
                     SqlDataAdapter adt = new SqlDataAdapter(query, con);
                     adt.SelectCommand.Parameters.AddWithValue("@value", "%" + value + "%");
                     DataTable dt = new DataTable();
@@ -131,8 +139,8 @@ namespace DoAn1
 
         private void XoaKhachHang_Click(object sender, EventArgs e)
         {
-            if(BangKhachHang.SelectedRows.Count == 0)
-    {
+            if (BangKhachHang.SelectedRows.Count == 0)
+            {
                 MessageBox.Show("Vui lòng chọn một khách hàng để xóa.");
                 return;
             }
@@ -185,9 +193,28 @@ namespace DoAn1
 
         private void SuaKhachHang_Click(object sender, EventArgs e)
         {
-            formThongTinCanSua thongTinForm = new formThongTinCanSua();
-            thongTinForm.FormClosed += (s, args) => { LoadAllData(); };
-            thongTinForm.ShowDialog();
+            if(BangKhachHang.SelectedRows.Count == 0)
+    {
+                MessageBox.Show("Vui lòng chọn một khách hàng để sửa.");
+                return;
+            }
+
+            var row = BangKhachHang.SelectedRows[0];
+            // Lấy thông tin khách hàng từ dòng được chọn
+            string maKhachHang = row.Cells[0].Value?.ToString();
+            string tenKhachHang = row.Cells[1].Value?.ToString();
+            string cmnd = row.Cells[2].Value?.ToString();
+            string gioiTinh = row.Cells[3].Value?.ToString();
+            string diaChi = row.Cells[4].Value?.ToString();
+            string dienThoai = row.Cells[5].Value?.ToString();
+            string quocTich = row.Cells[6].Value?.ToString();
+
+            // Truyền thông tin sang formSuaThongTin (giả sử có constructor nhận các tham số này)
+            var suaForm = new formSuaThongTin(
+                maKhachHang, tenKhachHang, cmnd, gioiTinh, diaChi, dienThoai, quocTich
+            );
+            suaForm.FormClosed += (s, args) => { LoadAllData(); };
+            suaForm.ShowDialog();
         }
 
         private void ThemFile_Click(object sender, EventArgs e)
@@ -266,6 +293,11 @@ namespace DoAn1
                     MessageBox.Show("Thêm dữ liệu từ file thành công!");
                 }
             }
+        }
+
+        private void TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
