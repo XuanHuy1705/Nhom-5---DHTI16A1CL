@@ -13,6 +13,7 @@
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.IsMdiContainer = true;
             mdiProp();
         }
@@ -267,6 +268,11 @@
         }
 
         private void pictureBoxNen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

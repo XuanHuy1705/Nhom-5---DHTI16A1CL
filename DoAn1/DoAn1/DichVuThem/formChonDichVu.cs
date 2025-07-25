@@ -27,7 +27,7 @@ namespace DoAn1.DichVuThem
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Check_Click(object sender, EventArgs e)
@@ -147,8 +147,16 @@ namespace DoAn1.DichVuThem
                 MessageBox.Show("Vui lòng chọn dịch vụ và nhập số lượng.");
                 return;
             }
+
+            int soLuong;
+            // Kiểm tra số lượng phải là số nguyên và >= 1
+            if (!int.TryParse(SoLuongChon.Text, out soLuong) || soLuong < 1)
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (là số nguyên >= 1).");
+                return;
+            }
+
             string tenDichVu = DanhSachDichVu.SelectedItem.ToString();
-            int soLuong = int.Parse(SoLuongChon.Text);
             DichVuDaChon.Rows.Add(tenDichVu, soLuong);
         }
     }

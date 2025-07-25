@@ -49,6 +49,13 @@ namespace DoAn1.OrderPhong.SuaPhong
                     DateTime ngayNhan = Convert.ToDateTime(reader["NgayNhan"]);
                     reader.Close();
 
+                    // Kiểm tra chưa đến ngày nhận phòng
+                    if (DateTime.Now.Date < ngayNhan.Date)
+                    {
+                        MessageBox.Show("Chưa đến ngày nhận phòng, không thể trả phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
                     // 2. Lấy DonGia từ DANH_SACH_PHONG_THUE
                     cmd = new SqlCommand(
                         "SELECT DonGia FROM DANH_SACH_PHONG_THUE WHERE MaPhong = @MaPhong", con);
